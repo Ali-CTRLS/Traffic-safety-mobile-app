@@ -1,0 +1,61 @@
+@startuml Administrator_Activity
+
+skinparam backgroundColor #FFFFFF
+skinparam activity {
+  BackgroundColor #FFFFFF
+  BorderColor #6441A5
+  FontSize 12
+  FontName Arial
+}
+skinparam activityDiamond {
+  BackgroundColor #FFFFFF
+  BorderColor #6441A5
+}
+skinparam activityStart {
+  Color #222222
+}
+skinparam activityEnd {
+  Color #222222
+}
+skinparam arrow {
+  Color #333333
+}
+
+title Activity Diagram – Administrator
+
+|Administrator|
+
+start
+
+:Open mobile app;
+
+:Enter email and password;
+
+if (Login valid?) then (Yes)
+  :View admin dashboard;
+else (No)
+  :Show error message;
+  :Re-enter credentials;
+  -> Enter email and password;
+endif
+
+if (Choose task?) then (Manage Users)
+  :Add / Edit / Deactivate users;
+
+elseif (Configure Alerts)
+  :Set alert rules\n(thresholds · zones · types);
+
+elseif (View Analytics)
+  :View analytics dashboard\n(incidents · violations · trends);
+
+else (Generate Reports)
+  :Generate safety report\n(filter by date · zone · type);
+  :Download / export report as PDF;
+
+endif
+
+:Logout;
+
+stop
+
+@enduml

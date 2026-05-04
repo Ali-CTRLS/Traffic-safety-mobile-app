@@ -1,0 +1,62 @@
+@startuml PoliceOfficer_Activity
+
+skinparam backgroundColor #FFFFFF
+skinparam activity {
+  BackgroundColor #FFFFFF
+  BorderColor #D85A30
+  FontSize 12
+  FontName Arial
+}
+skinparam activityDiamond {
+  BackgroundColor #FFFFFF
+  BorderColor #D85A30
+}
+skinparam activityStart {
+  Color #222222
+}
+skinparam activityEnd {
+  Color #222222
+}
+skinparam arrow {
+  Color #333333
+}
+
+title Activity Diagram – Police Officer
+
+|Police Officer|
+
+start
+
+:Open mobile app;
+
+:Enter email and password;
+
+if (Login valid?) then (Yes)
+  :View police dashboard;
+else (No)
+  :Show error message;
+  :Re-enter credentials;
+  -> Enter email and password;
+endif
+
+:Receive incident alert notification;
+
+:View full incident report;
+
+:Review details\n(location · photos · incident type);
+
+if (Incident severe?\n👮 Officer decides) then (Severe)
+  :Dispatch emergency services;
+
+else (Minor)
+  :Issue e-fine to driver;
+
+endif
+
+:Monitor more incidents;
+
+:Logout;
+
+stop
+
+@enduml

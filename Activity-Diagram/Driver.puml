@@ -1,0 +1,62 @@
+@startuml Driver_Activity
+
+skinparam backgroundColor #FFFFFF
+skinparam activity {
+  BackgroundColor #FFFFFF
+  BorderColor #1D9E75
+  FontSize 12
+  FontName Arial
+}
+skinparam activityDiamond {
+  BackgroundColor #FFFFFF
+  BorderColor #1D9E75
+}
+skinparam activityStart {
+  Color #222222
+}
+skinparam activityEnd {
+  Color #222222
+}
+skinparam arrow {
+  Color #333333
+}
+
+title Activity Diagram – Driver
+
+|Driver|
+
+start
+
+:Open mobile app;
+
+:Enter email and password;
+
+if (Login valid?) then (Yes)
+  :View home screen / dashboard;
+else (No)
+  :Show error message;
+  :Re-enter credentials;
+  -> Enter email and password;
+endif
+
+if (Choose action?) then (Report)
+  :Fill incident report form\n(type · description · location);
+  :Attach photo / video\n«optional»;
+  :Submit report;
+  :See submission confirmation;
+
+elseif (SOS)
+  :Send SOS alert;
+  :See SOS sent confirmation;
+
+else (Navigate)
+  :View traffic alerts on map;
+  :Navigate live route;
+
+endif
+
+:Logout;
+
+stop
+
+@enduml
