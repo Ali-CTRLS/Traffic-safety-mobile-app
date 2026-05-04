@@ -1,0 +1,57 @@
+@startuml Police_UseCase
+
+skinparam backgroundColor #FFFFFF
+skinparam actorStyle awesome
+skinparam usecase {
+  BackgroundColor #FFFFFF
+  BorderColor #D85A30
+  FontSize 12
+}
+skinparam actor {
+  BorderColor #D85A30
+  FontColor #D85A30
+}
+
+title Police Officer — Use Case Diagram
+
+actor "Police Officer" as Police
+
+rectangle "Traffic Safety Mobile Application" {
+
+  ' ── AUTH ──
+  usecase "Register" as UC_Register
+  usecase "Login" as UC_Login
+  usecase "Forgot Password" as UC_Forgot
+  usecase "Authenticate User" as UC_Auth #F5F5F5
+
+  ' ── MAIN USE CASES ──
+  usecase "View Reported Incidents" as UC_ViewInc
+  usecase "Assess & Classify\nIncident Severity\n(👮 Officer Decides)" as UC_Classify
+  usecase "Dispatch Emergency Services" as UC_Dispatch
+  usecase "Issue E-Fine" as UC_Fine
+
+  ' ── INCLUDED ──
+  usecase "Send Notification" as UC_Notify #F5F5F5
+  usecase "Log Activity" as UC_Log #F5F5F5
+
+}
+
+' ── ASSOCIATIONS ──
+Police -- UC_Register
+Police -- UC_Login
+Police -- UC_ViewInc
+Police -- UC_Classify
+Police -- UC_Dispatch
+Police -- UC_Fine
+
+' ── INCLUDE ──
+UC_Register ..> UC_Auth   : <<include>>
+UC_Login    ..> UC_Auth   : <<include>>
+UC_Dispatch ..> UC_Notify : <<include>>
+UC_Fine     ..> UC_Log    : <<include>>
+UC_Classify ..> UC_Log    : <<include>>
+
+' ── EXTEND ──
+UC_Forgot ..> UC_Login : <<extend>>
+
+@enduml

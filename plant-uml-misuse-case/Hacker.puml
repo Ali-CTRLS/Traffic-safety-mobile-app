@@ -1,0 +1,50 @@
+@startuml Hacker_Misuse
+
+skinparam backgroundColor #FFFFFF
+skinparam actorStyle awesome
+
+skinparam usecase {
+  BackgroundColor #FFFFFF
+  BorderColor #333333
+  FontSize 12
+}
+
+skinparam actor {
+  BorderColor #CC0000
+  FontColor #CC0000
+}
+
+title Hacker — Misuse Case Diagram
+
+actor "Hacker" as Hacker #CC0000
+
+rectangle "Traffic Safety Mobile Application" {
+
+  ' ── MISUSE CASES (red) ──
+  usecase "Brute Force Login\n(guess password repeatedly)" as MU1 #FFCCCC
+  usecase "JWT Session Hijacking\n(steal token to impersonate user)" as MU2 #FFCCCC
+  usecase "Intercept Data in Transit\n(man-in-the-middle attack)" as MU3 #FFCCCC
+
+  ' ── SECURITY USE CASES (green) ──
+  usecase "Account Lockout\nafter 5 failed attempts" as SEC1 #CCFFEE
+  usecase "JWT Token Expiry\n(24-hour expiration)" as SEC2 #CCFFEE
+  usecase "TLS 1.2+ Encryption\n(all data in transit)" as SEC3 #CCFFEE
+
+}
+
+' ── ASSOCIATIONS ──
+Hacker -- MU1
+Hacker -- MU2
+Hacker -- MU3
+
+' ── THREATENS ──
+MU1 ..> SEC1 : <<threatens>>
+MU2 ..> SEC2 : <<threatens>>
+MU3 ..> SEC3 : <<threatens>>
+
+' ── MITIGATES ──
+SEC1 ..> MU1 : <<mitigates>>
+SEC2 ..> MU2 : <<mitigates>>
+SEC3 ..> MU3 : <<mitigates>>
+
+@enduml

@@ -1,0 +1,45 @@
+@startuml UnauthorizedUser_Misuse
+
+skinparam backgroundColor #FFFFFF
+skinparam actorStyle awesome
+
+skinparam usecase {
+  BackgroundColor #FFFFFF
+  BorderColor #333333
+  FontSize 12
+}
+
+skinparam actor {
+  BorderColor #CC0000
+  FontColor #CC0000
+}
+
+title Unauthorized User — Misuse Case Diagram
+
+actor "Unauthorized User" as UnAuthUser #CC0000
+
+rectangle "Traffic Safety Mobile Application" {
+
+  ' ── MISUSE CASES (red) ──
+  usecase "Access Unauthorized Role Features\n(driver tries to access police panel)" as MU7 #FFCCCC
+  usecase "Tamper With Incident Records\n(modify or delete reports without permission)" as MU8 #FFCCCC
+
+  ' ── SECURITY USE CASES (green) ──
+  usecase "Role-Based Access Control\n(restrict features by verified role)" as SEC7 #CCFFEE
+  usecase "Audit Log +\nData Integrity Check\n(detect and prevent unauthorized changes)" as SEC8 #CCFFEE
+
+}
+
+' ── ASSOCIATIONS ──
+UnAuthUser -- MU7
+UnAuthUser -- MU8
+
+' ── THREATENS ──
+MU7 ..> SEC7 : <<threatens>>
+MU8 ..> SEC8 : <<threatens>>
+
+' ── MITIGATES ──
+SEC7 ..> MU7 : <<mitigates>>
+SEC8 ..> MU8 : <<mitigates>>
+
+@enduml

@@ -1,0 +1,63 @@
+@startuml Driver_UseCase
+
+skinparam backgroundColor #FFFFFF
+skinparam actorStyle awesome
+skinparam usecase {
+  BackgroundColor #FFFFFF
+  BorderColor #1D9E75
+  FontSize 12
+}
+skinparam actor {
+  BorderColor #1D9E75
+  FontColor #1D9E75
+}
+
+title Driver — Use Case Diagram
+
+actor "Driver" as Driver
+
+rectangle "Traffic Safety Mobile Application" {
+
+  ' ── AUTH ──
+  usecase "Register" as UC_Register
+  usecase "Login" as UC_Login
+  usecase "Forgot Password" as UC_Forgot
+  usecase "Authenticate User" as UC_Auth #F5F5F5
+
+  ' ── MAIN USE CASES ──
+  usecase "Report Accident" as UC_ReportAcc
+  usecase "Report Road Hazard" as UC_ReportHaz
+  usecase "Send SOS Alert" as UC_SOS
+  usecase "View Traffic Alerts" as UC_ViewAlerts
+  usecase "Navigate Live Route" as UC_Navigate
+
+  ' ── INCLUDED ──
+  usecase "Capture GPS Location" as UC_GPS #F5F5F5
+
+  ' ── EXTENDED ──
+  usecase "Attach Photo / Video" as UC_Attach
+
+}
+
+' ── ASSOCIATIONS ──
+Driver -- UC_Register
+Driver -- UC_Login
+Driver -- UC_ReportAcc
+Driver -- UC_ReportHaz
+Driver -- UC_SOS
+Driver -- UC_ViewAlerts
+Driver -- UC_Navigate
+
+' ── INCLUDE ──
+UC_Register  ..> UC_Auth : <<include>>
+UC_Login     ..> UC_Auth : <<include>>
+UC_ReportAcc ..> UC_GPS  : <<include>>
+UC_SOS       ..> UC_GPS  : <<include>>
+UC_Navigate  ..> UC_GPS  : <<include>>
+
+' ── EXTEND ──
+UC_Forgot  ..> UC_Login     : <<extend>>
+UC_Attach  ..> UC_ReportAcc : <<extend>>
+UC_Attach  ..> UC_ReportHaz : <<extend>>
+
+@enduml

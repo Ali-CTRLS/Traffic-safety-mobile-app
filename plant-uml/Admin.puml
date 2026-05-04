@@ -1,0 +1,56 @@
+@startuml Admin_UseCase
+
+skinparam backgroundColor #FFFFFF
+skinparam actorStyle awesome
+skinparam usecase {
+  BackgroundColor #FFFFFF
+  BorderColor #6441A5
+  FontSize 12
+}
+skinparam actor {
+  BorderColor #6441A5
+  FontColor #6441A5
+}
+
+title Administrator — Use Case Diagram
+
+actor "Administrator" as Admin
+
+rectangle "Traffic Safety Mobile Application" {
+
+  ' ── AUTH ──
+  usecase "Register" as UC_Register
+  usecase "Login" as UC_Login
+  usecase "Forgot Password" as UC_Forgot
+  usecase "Authenticate User" as UC_Auth #F5F5F5
+
+  ' ── MAIN USE CASES ──
+  usecase "Manage Users" as UC_ManageUsers
+  usecase "View Analytics" as UC_Analytics
+  usecase "Configure Alert Rules" as UC_ConfigAlerts
+  usecase "Generate Reports" as UC_Reports
+
+  ' ── INCLUDED ──
+  usecase "Log Activity" as UC_Log #F5F5F5
+
+}
+
+' ── ASSOCIATIONS ──
+Admin -- UC_Register
+Admin -- UC_Login
+Admin -- UC_ManageUsers
+Admin -- UC_Analytics
+Admin -- UC_ConfigAlerts
+Admin -- UC_Reports
+
+' ── INCLUDE ──
+UC_Register      ..> UC_Auth : <<include>>
+UC_Login         ..> UC_Auth : <<include>>
+UC_ManageUsers   ..> UC_Log  : <<include>>
+UC_Reports       ..> UC_Log  : <<include>>
+UC_ConfigAlerts  ..> UC_Log  : <<include>>
+
+' ── EXTEND ──
+UC_Forgot ..> UC_Login : <<extend>>
+
+@enduml

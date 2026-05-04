@@ -1,0 +1,58 @@
+@startuml Emergency_UseCase
+
+skinparam backgroundColor #FFFFFF
+skinparam actorStyle awesome
+skinparam usecase {
+  BackgroundColor #FFFFFF
+  BorderColor #BA7517
+  FontSize 12
+}
+skinparam actor {
+  BorderColor #BA7517
+  FontColor #BA7517
+}
+
+title Emergency Services — Use Case Diagram
+
+actor "Emergency Services" as Emergency
+
+rectangle "Traffic Safety Mobile Application" {
+
+  ' ── AUTH ──
+  usecase "Register" as UC_Register
+  usecase "Login" as UC_Login
+  usecase "Forgot Password" as UC_Forgot
+  usecase "Authenticate User" as UC_Auth #F5F5F5
+
+  ' ── MAIN USE CASES ──
+  usecase "Receive Dispatch Alert" as UC_ReceiveDispatch
+  usecase "Navigate to Incident" as UC_NavInc
+  usecase "Update Incident Status" as UC_UpdateStatus
+
+  ' ── INCLUDED ──
+  usecase "Capture GPS Location" as UC_GPS #F5F5F5
+  usecase "Log Activity" as UC_Log #F5F5F5
+
+  ' ── EXTENDED ──
+  usecase "Request Road Clearance" as UC_Clearance
+
+}
+
+' ── ASSOCIATIONS ──
+Emergency -- UC_Register
+Emergency -- UC_Login
+Emergency -- UC_ReceiveDispatch
+Emergency -- UC_NavInc
+Emergency -- UC_UpdateStatus
+
+' ── INCLUDE ──
+UC_Register        ..> UC_Auth : <<include>>
+UC_Login           ..> UC_Auth : <<include>>
+UC_NavInc          ..> UC_GPS  : <<include>>
+UC_UpdateStatus    ..> UC_Log  : <<include>>
+
+' ── EXTEND ──
+UC_Forgot    ..> UC_Login  : <<extend>>
+UC_Clearance ..> UC_NavInc : <<extend>>
+
+@enduml

@@ -1,0 +1,50 @@
+@startuml MaliciousDriver_Misuse
+
+skinparam backgroundColor #FFFFFF
+skinparam actorStyle awesome
+
+skinparam usecase {
+  BackgroundColor #FFFFFF
+  BorderColor #333333
+  FontSize 12
+}
+
+skinparam actor {
+  BorderColor #CC0000
+  FontColor #CC0000
+}
+
+title Malicious Driver — Misuse Case Diagram
+
+actor "Malicious Driver" as MalDriver #CC0000
+
+rectangle "Traffic Safety Mobile Application" {
+
+  ' ── MISUSE CASES (red) ──
+  usecase "Submit Fake Accident Report\n(false data to waste police resources)" as MU4 #FFCCCC
+  usecase "Spoof GPS Location\n(fake coordinates in incident report)" as MU5 #FFCCCC
+  usecase "Flood False SOS Alerts\n(overwhelm emergency services)" as MU6 #FFCCCC
+
+  ' ── SECURITY USE CASES (green) ──
+  usecase "Validate Report Data\n(check completeness and consistency)" as SEC4 #CCFFEE
+  usecase "Verify GPS Coordinates\n(cross-check location validity)" as SEC5 #CCFFEE
+  usecase "Rate Limiting + Flagging\n(limit SOS frequency per user)" as SEC6 #CCFFEE
+
+}
+
+' ── ASSOCIATIONS ──
+MalDriver -- MU4
+MalDriver -- MU5
+MalDriver -- MU6
+
+' ── THREATENS ──
+MU4 ..> SEC4 : <<threatens>>
+MU5 ..> SEC5 : <<threatens>>
+MU6 ..> SEC6 : <<threatens>>
+
+' ── MITIGATES ──
+SEC4 ..> MU4 : <<mitigates>>
+SEC5 ..> MU5 : <<mitigates>>
+SEC6 ..> MU6 : <<mitigates>>
+
+@enduml
