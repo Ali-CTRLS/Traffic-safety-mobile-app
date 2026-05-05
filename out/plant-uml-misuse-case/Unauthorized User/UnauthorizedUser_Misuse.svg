@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="436px" preserveAspectRatio="none" style="width:672px;height:436px;" version="1.1" viewBox="0 0 672 436" width="672px" zoomAndPan="magnify"><defs><filter height="300%" id="fz2gewhemzh76" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="353" x="153" y="18.6855">Unauthorized User — Misuse Case Diagram</text><!--MD5=[a235da51a0dfdd40bff9cc0c8b2af1ea]
+cluster Traffic Safety Mobile Application--><rect fill="#FFFFFF" filter="url(#fz2gewhemzh76)" height="269" style="stroke:#000000;stroke-width:1.5;" width="653" x="7" y="155.1406"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="225" x="221" y="171.6738">Traffic Safety Mobile Application</text><ellipse cx="154.9022" cy="223.9211" fill="#FFCCCC" filter="url(#fz2gewhemzh76)" rx="131.9022" ry="28.7804" style="stroke:#333333;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="197" x="56.4022" y="219.2844">Access Unauthorized Role Features</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="191" x="59.4022" y="234.3781">(driver tries to access police panel)</text><ellipse cx="474.0228" cy="223.9452" fill="#FFCCCC" filter="url(#fz2gewhemzh76)" rx="152.0228" ry="32.8046" style="stroke:#333333;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="166" x="391.0228" y="219.3085">Tamper With Incident Records</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="245" x="351.5228" y="234.4022">(modify or delete reports without permission)</text><ellipse cx="145.7687" cy="371.5944" fill="#CCFFEE" filter="url(#fz2gewhemzh76)" rx="122.7687" ry="26.9537" style="stroke:#333333;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="152" x="69.7687" y="366.9576">Role-Based Access Control</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="174" x="58.7687" y="382.0514">(restrict features by verified role)</text><ellipse cx="473.7969" cy="371.5" fill="#CCFFEE" filter="url(#fz2gewhemzh76)" rx="169.7969" ry="36.3594" style="stroke:#333333;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="61" x="443.2969" y="359.3164">Audit Log +</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="109" x="419.2969" y="374.4102">Data Integrity Check</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="233" x="357.2969" y="389.5039">(detect and prevent unauthorized changes)</text><!--MD5=[fc0af6d58488d54037ac5c42b5a5b579]
+entity UnAuthUser--><ellipse cx="314" cy="44.6406" fill="#CC0000" filter="url(#fz2gewhemzh76)" rx="16" ry="16" style="stroke:#CC0000;stroke-width:1.5;"/><path d="M314,64.6406 C318,64.6406 321,64.6406 325,60.6406 C333,60.6406 341,68.6406 341,76.6406 L341,80.6406 C341,84.6406 337,88.6406 333,88.6406 L295,88.6406 C291,88.6406 287,84.6406 287,80.6406 L287,76.6406 C287,68.6406 295,60.6406 303,60.6406 C307,64.6406 310,64.6406 314,64.6406 " fill="#CC0000" filter="url(#fz2gewhemzh76)" style="stroke:#CC0000;stroke-width:1.5;"/><text fill="#CC0000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="256" y="104.6738">Unauthorized User</text><!--MD5=[7802ca9ac7eb8fa3fe59653c6ac8e83d]
+link UnAuthUser to MU7--><path d="M273.05,108.4306 C244.9,135.7906 208.23,171.4206 183.28,195.6606 " fill="none" id="UnAuthUser-MU7" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[187aded2c58986a64784e10647634b82]
+link UnAuthUser to MU8--><path d="M355.2,108.4306 C382.06,134.3606 416.6,167.7106 441.51,191.7706 " fill="none" id="UnAuthUser-MU8" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[ac38fb0f6bf0ae0f919129a98241bd8a]
+link MU7 to SEC7--><path d="M135.9,252.9006 C129.9,263.1906 124.05,275.2506 121,287.1406 C116.47,304.8106 121.75,324.3506 128.6,340.0806 " fill="none" id="MU7-to-SEC7" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="130.77,344.8406,130.6756,334.9922,128.6956,340.2912,123.3966,338.3113,130.77,344.8406" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="68" x="122" y="301.6357">«threatens»</text><!--MD5=[e8aa810963e820442bec44a5ed7b5098]
+link SEC7 to MU7--><path d="M171.08,345.1806 C180.51,333.8806 190.11,319.8306 195,305.1406 C200.46,288.7206 193.59,271.4306 184.08,257.1406 " fill="none" id="SEC7-to-MU7" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="181.05,252.8106,182.9139,262.4815,183.9087,256.9128,189.4774,257.9076,181.05,252.8106" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="67" x="197" y="301.6357">«mitigates»</text><!--MD5=[25c2a62770d32c0acc492a9ee92e02f8]
+link MU8 to SEC8--><path d="M412.84,254.6006 C400.85,263.3306 389.88,274.1306 383,287.1406 C373.39,305.3106 383.74,321.5906 400.45,334.8306 " fill="none" id="MU8-to-SEC8" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="404.83,338.1306,400.0645,329.5115,400.842,335.1146,395.2389,335.8922,404.83,338.1306" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="68" x="384" y="301.6357">«threatens»</text><!--MD5=[ddff43df3f1009bed3ad5bf2c0a828c3]
+link SEC8 to MU8--><path d="M474,335.1306 C474,313.1706 474,285.0106 474,262.6806 " fill="none" id="SEC8-to-MU8" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="474,257.4306,470,266.4306,474,262.4306,478,266.4306,474,257.4306" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="67" x="475" y="301.6357">«mitigates»</text><!--MD5=[877b10ab7c8300c6d14479d90935aeda]
+@startuml UnauthorizedUser_Misuse
+
+skinparam backgroundColor #FFFFFF
+skinparam actorStyle awesome
+
+skinparam usecase {
+  BackgroundColor #FFFFFF
+  BorderColor #333333
+  FontSize 12
+}
+
+skinparam actor {
+  BorderColor #CC0000
+  FontColor #CC0000
+}
+
+title Unauthorized User — Misuse Case Diagram
+
+actor "Unauthorized User" as UnAuthUser #CC0000
+
+rectangle "Traffic Safety Mobile Application" {
+
+  ' ── MISUSE CASES (red) ──
+  usecase "Access Unauthorized Role Features\n(driver tries to access police panel)" as MU7 #FFCCCC
+  usecase "Tamper With Incident Records\n(modify or delete reports without permission)" as MU8 #FFCCCC
+
+  ' ── SECURITY USE CASES (green) ──
+  usecase "Role-Based Access Control\n(restrict features by verified role)" as SEC7 #CCFFEE
+  usecase "Audit Log +\nData Integrity Check\n(detect and prevent unauthorized changes)" as SEC8 #CCFFEE
+
+}
+
+' ── ASSOCIATIONS ──
+UnAuthUser - - MU7
+UnAuthUser - - MU8
+
+' ── THREATENS ──
+MU7 ..> SEC7 : <<threatens>>
+MU8 ..> SEC8 : <<threatens>>
+
+' ── MITIGATES ──
+SEC7 ..> MU7 : <<mitigates>>
+SEC8 ..> MU8 : <<mitigates>>
+
+@enduml
+
+@startuml UnauthorizedUser_Misuse
+
+skinparam backgroundColor #FFFFFF
+skinparam actorStyle awesome
+
+skinparam usecase {
+  BackgroundColor #FFFFFF
+  BorderColor #333333
+  FontSize 12
+}
+
+skinparam actor {
+  BorderColor #CC0000
+  FontColor #CC0000
+}
+
+title Unauthorized User — Misuse Case Diagram
+
+actor "Unauthorized User" as UnAuthUser #CC0000
+
+rectangle "Traffic Safety Mobile Application" {
+
+  usecase "Access Unauthorized Role Features\n(driver tries to access police panel)" as MU7 #FFCCCC
+  usecase "Tamper With Incident Records\n(modify or delete reports without permission)" as MU8 #FFCCCC
+
+  usecase "Role-Based Access Control\n(restrict features by verified role)" as SEC7 #CCFFEE
+  usecase "Audit Log +\nData Integrity Check\n(detect and prevent unauthorized changes)" as SEC8 #CCFFEE
+
+}
+
+UnAuthUser - - MU7
+UnAuthUser - - MU8
+
+MU7 ..> SEC7 : <<threatens>>
+MU8 ..> SEC8 : <<threatens>>
+
+SEC7 ..> MU7 : <<mitigates>>
+SEC8 ..> MU8 : <<mitigates>>
+
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 12:25:05 EET 2021)
+(MIT source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

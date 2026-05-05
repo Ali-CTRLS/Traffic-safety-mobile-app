@@ -1,16 +1,16 @@
-@startuml PoliceOfficer_Activity
+@startuml EmergencyServices_Activity
 
 skinparam backgroundColor #FFFFFF
 skinparam activity {
   BackgroundColor #FFFFFF
-  BorderColor #D85A30
+  BorderColor #BA7517
   FontSize 12
   FontName Arial
 }
 
-title Police Officer Activity
+title Emergency Services Activity
 
-|Police Officer|
+|Emergency Services|
 
 start
 
@@ -27,21 +27,21 @@ repeat
 
 repeat while (Invalid login)
 
-:View dashboard;
+:Standby on dashboard;
 
-:Receive incident alert;
+:Receive dispatch alert;
 
-:View report details;
+:Acknowledge dispatch;
 
-if (Incident severe?) then (Yes)
-  :Dispatch emergency services;
-else (No)
-  :Issue e-fine;
+:Navigate to incident;
+
+if (Road blocked?) then (Yes)
+  :Request clearance;
 endif
 
-:Monitor incidents;
+:Arrive on scene;
 
-:Logout;
+:Update status (Resolved);
 
 stop
 @enduml

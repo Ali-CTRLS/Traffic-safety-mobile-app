@@ -1,1 +1,133 @@
-<?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="519px" preserveAspectRatio="none" style="width:1063px;height:519px;background:#FFFFFF;" version="1.1" viewBox="0 0 1063 519" width="1063px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="244.4375" x="402.3113" y="24.5332">Police Officer &#8212; Use Case Diagram</text><!--cluster Traffic Safety Mobile Application--><g id="cluster_Traffic Safety Mobile Application"><rect fill="none" height="343" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="967" x="39.18" y="170.1094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="225" x="410.18" y="186.6426">Traffic Safety Mobile Application</text></g><g id="elem_UC_Register"><ellipse cx="112.3993" cy="370.2823" fill="#FFFFFF" rx="44.7193" ry="13.6729" style="stroke:#D85A30;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="47" x="88.8993" y="373.1924">Register</text></g><g id="elem_UC_Login"><ellipse cx="922.0856" cy="370.2823" fill="#FFFFFF" rx="33.4056" ry="13.6729" style="stroke:#D85A30;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="31" x="906.5856" y="373.1924">Login</text></g><g id="elem_UC_Forgot"><ellipse cx="922.2406" cy="241.1215" fill="#FFFFFF" rx="68.0606" ry="16.0121" style="stroke:#D85A30;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="94" x="875.2406" y="244.0317">Forgot Password</text></g><g id="elem_UC_Auth"><ellipse cx="344.9683" cy="480.367" fill="#F5F5F5" rx="69.2883" ry="16.2577" style="stroke:#D85A30;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="97" x="296.4683" y="483.2772">Authenticate User</text></g><g id="elem_UC_ViewInc"><ellipse cx="140.4121" cy="240.9558" fill="#FFFFFF" rx="84.7321" ry="19.3464" style="stroke:#D85A30;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="133" x="73.9121" y="243.8659">View Reported Incidents</text></g><g id="elem_UC_Classify"><ellipse cx="499.3257" cy="241.1281" fill="#FFFFFF" rx="87.1457" ry="35.0187" style="stroke:#D85A30;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="100" x="449.3257" y="228.9445">Assess &amp; Classify</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="88" x="455.3257" y="244.0382">Incident Severity</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="107" x="445.8257" y="259.132">(&#128110; Officer Decides)</text></g><g id="elem_UC_Dispatch"><ellipse cx="720.4291" cy="241.2592" fill="#FFFFFF" rx="98.7491" ry="22.1498" style="stroke:#D85A30;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="164" x="638.4291" y="244.1693">Dispatch Emergency Services</text></g><g id="elem_UC_Fine"><ellipse cx="318.4024" cy="241.2539" fill="#FFFFFF" rx="58.7224" ry="14.1445" style="stroke:#D85A30;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="70" x="283.1873" y="244.2107">Issue E-Fine</text></g><g id="elem_UC_Notify"><ellipse cx="720.3339" cy="370.0402" fill="#F5F5F5" rx="67.6539" ry="15.9308" style="stroke:#D85A30;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="93" x="673.8339" y="372.9503">Send Notification</text></g><g id="elem_UC_Log"><ellipse cx="388.3974" cy="370.285" fill="#F5F5F5" rx="53.2174" ry="13.6756" style="stroke:#D85A30;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="59" x="358.0941" y="373.3659">Log Activity</text></g><!--entity Police--><g id="elem_Police"><ellipse cx="431.18" cy="60.6094" fill="#F1F1F1" rx="16" ry="16" style="stroke:#D85A30;stroke-width:0.5;"/><path d="M431.18,80.6094 C435.18,80.6094 438.18,80.6094 442.18,76.6094 C450.18,76.6094 458.18,84.6094 458.18,92.6094 L458.18,96.6094 C458.18,100.6094 454.18,104.6094 450.18,104.6094 L412.18,104.6094 C408.18,104.6094 404.18,100.6094 404.18,96.6094 L404.18,92.6094 C404.18,84.6094 412.18,76.6094 420.18,76.6094 C424.18,80.6094 427.18,80.6094 431.18,80.6094 " fill="#F1F1F1" style="stroke:#D85A30;stroke-width:0.5;"/><text fill="#D85A30" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="389.18" y="119.6426">Police Officer</text></g><!--link Police to UC_Register--><g id="link_Police_UC_Register"><path d="M388.98,86.4194 C296.83,91.3494 82.28,108.4594 38.18,162.1094 C6,201.2494 21.47,228.2794 38.18,276.1094 C50.02,309.9994 79.95,340.7894 97.91,357.0294 " fill="none" id="Police-UC_Register" style="stroke:#181818;stroke-width:1.0;"/></g><!--link Police to UC_Login--><g id="link_Police_UC_Login"><path d="M473.33,87.1194 C600.35,95.0994 972.91,121.7894 1008.18,162.1094 C1056.06,216.8494 1031.95,268.4294 985.18,324.1094 C972.9,338.7194 954.86,350.9694 941.23,358.9794 " fill="none" id="Police-UC_Login" style="stroke:#181818;stroke-width:1.0;"/></g><!--link Police to UC_ViewInc--><g id="link_Police_UC_ViewInc"><path d="M389.16,98.2394 C349.85,111.8194 290.16,134.5694 242.18,162.1094 C211.82,179.5294 180.34,204.9194 160.52,221.9494 " fill="none" id="Police-UC_ViewInc" style="stroke:#181818;stroke-width:1.0;"/></g><!--link Police to UC_Classify--><g id="link_Police_UC_Classify"><path d="M448.16,123.4494 C459.33,148.9994 473.81,182.0994 484.48,206.5094 " fill="none" id="Police-UC_Classify" style="stroke:#181818;stroke-width:1.0;"/></g><!--link Police to UC_Dispatch--><g id="link_Police_UC_Dispatch"><path d="M473.39,101.1494 C509.04,115.6694 561.01,138.1594 604.18,162.1094 C635.8,179.6494 669.91,203.1994 692.89,219.8194 " fill="none" id="Police-UC_Dispatch" style="stroke:#181818;stroke-width:1.0;"/></g><!--link Police to UC_Fine--><g id="link_Police_UC_Fine"><path d="M402.95,123.4494 C378.38,157.2694 344.18,204.3294 327.74,226.9494 " fill="none" id="Police-UC_Fine" style="stroke:#181818;stroke-width:1.0;"/></g><!--link UC_Register to UC_Auth--><g id="link_UC_Register_UC_Auth"><path d="M134.94,381.7094 C177.2,401.3894 262.3008,441.0167 309.5908,463.0367 " fill="none" id="UC_Register-to-UC_Auth" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="315.03,465.5694,308.5596,458.1441,310.4973,463.4588,305.1827,465.3965,315.03,465.5694" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55" x="243.18" y="430.6045">&#171;include&#187;</text></g><!--link UC_Login to UC_Auth--><g id="link_UC_Login_UC_Auth"><path d="M892.77,376.6394 C800.57,393.9794 522.1367,446.3306 403.6967,468.6006 " fill="none" id="UC_Login-to-UC_Auth" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="397.8,469.7094,407.3842,471.9774,402.7139,468.7854,405.9058,464.1152,397.8,469.7094" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55" x="669.18" y="430.6045">&#171;include&#187;</text></g><!--link UC_Dispatch to UC_Notify--><g id="link_UC_Dispatch_UC_Notify"><path d="M720.18,263.3694 C720.18,288.9294 720.18,325.1994 720.18,347.7794 " fill="none" id="UC_Dispatch-to-UC_Notify" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="720.18,353.7794,724.18,344.7794,720.18,348.7794,716.18,344.7794,720.18,353.7794" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55" x="721.18" y="320.6045">&#171;include&#187;</text></g><!--link UC_Fine to UC_Log--><g id="link_UC_Fine_UC_Log"><path d="M323.64,255.2194 C330.68,271.6794 343.62,300.6294 357.18,324.1094 C363.72,335.4494 368.6844,342.7917 375.1244,351.6217 " fill="none" id="UC_Fine-to-UC_Log" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="378.66,356.4694,376.5884,346.8408,375.7137,352.4297,370.1249,351.5549,378.66,356.4694" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55" x="358.18" y="320.6045">&#171;include&#187;</text></g><!--link UC_Classify to UC_Log--><g id="link_UC_Classify_UC_Log"><path d="M470.88,274.4894 C447.5,301.2394 419.5085,333.2617 402.9985,352.1517 " fill="none" id="UC_Classify-to-UC_Log" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="399.05,356.6694,407.9845,352.5252,402.3404,352.9046,401.9609,347.2605,399.05,356.6694" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55" x="441.18" y="320.6045">&#171;include&#187;</text></g><!--link UC_Forgot to UC_Login--><g id="link_UC_Forgot_UC_Login"><path d="M922.18,257.1794 C922.18,282.4094 922.18,326.7494 922.18,350.3494 " fill="none" id="UC_Forgot-to-UC_Login" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="922.18,356.3494,926.18,347.3494,922.18,351.3494,918.18,347.3494,922.18,356.3494" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="53" x="923.18" y="320.6045">&#171;extend&#187;</text></g><!--SRC=[XLFRQjj047tNLmmkzFBWq0k1Ke91bMGgIEmGsQKFXRAHnieIUzVihksw9P1VAEIzVz2FoXVq4pfhQTVQr6bjW-KpPywUFJFMrrmicM8Bk6JbTQtaIbI9d4i5JuQxLwGzWvL6gi9ivmXiWreki5DSQIoPHlWU0Rn_H8egKbMeMZHzUno_UKdeK0fJy6y8hrv7DmyFR1GVxGkncoWot931Spdd9S9uDgCl1VUtTp0bTucrc79MatmKDVgzaDi3fjlsA59O6YPg4knD5BC4ADWCpHREv2KdE5ukYSaCbw97JidKCxY_kwKFnDF9X_QPO9TFxm9hharxpZJvudvtEQUovi8HTZ-wrQ5KjJHmphJUK2wEry1TOhmoLoYCzOVs-lvCMw2f7DjtuFaipaSmBJ98uY8h3hZ_o7435xYKoc05kIXvHITe9spB10Ocj4QjuIaaSpBCPzlFmhL1WMjKt13q_FVF7x_yk5Aq1Ft2oRhMhcxAzPAPyWgo1QeQHRabERMcVk_6KRfjkTOhXAm_v09zSlGSn92FajDfcgK70YXGL32IXi_ys1kH7RRrgORJXBWqV4qtxGnrFm3QsltM5CKuoUD9FXxv_Di5xVU3VGdGPaa2oCqY07sI0Ug32j0cbeUXE5CTAt1qDF1h1V0EJawuAEUh2WU3o9cZmlzuVgGjhutqBvur1Xqz6-OXFNVPV_Bs5ym-JR9HshbV-qVRTzCjR3D-DRG5rFi7]--></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="510px" preserveAspectRatio="none" style="width:1052px;height:510px;" version="1.1" viewBox="0 0 1052 510" width="1052px" zoomAndPan="magnify"><defs><filter height="300%" id="f1cap06nvl1cdr" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="286" x="376.94" y="18.6855">Police Officer — Use Case Diagram</text><!--MD5=[a235da51a0dfdd40bff9cc0c8b2af1ea]
+cluster Traffic Safety Mobile Application--><rect fill="#FFFFFF" filter="url(#f1cap06nvl1cdr)" height="343" style="stroke:#000000;stroke-width:1.5;" width="957" x="39.09" y="155.1406"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="225" x="405.09" y="171.6738">Traffic Safety Mobile Application</text><ellipse cx="112.3093" cy="355.3135" fill="#FFFFFF" filter="url(#f1cap06nvl1cdr)" rx="44.7193" ry="13.6729" style="stroke:#D85A30;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="47" x="88.8093" y="358.2237">Register</text><ellipse cx="911.9956" cy="355.3135" fill="#FFFFFF" filter="url(#f1cap06nvl1cdr)" rx="33.4056" ry="13.6729" style="stroke:#D85A30;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="31" x="896.4956" y="358.2237">Login</text><ellipse cx="912.1506" cy="226.1527" fill="#FFFFFF" filter="url(#f1cap06nvl1cdr)" rx="68.0606" ry="16.0121" style="stroke:#D85A30;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="94" x="865.1506" y="229.0629">Forgot Password</text><ellipse cx="341.8783" cy="465.3983" fill="#F5F5F5" filter="url(#f1cap06nvl1cdr)" rx="69.2883" ry="16.2577" style="stroke:#D85A30;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="97" x="293.3783" y="468.3084">Authenticate User</text><ellipse cx="140.3221" cy="225.987" fill="#FFFFFF" filter="url(#f1cap06nvl1cdr)" rx="84.7321" ry="19.3464" style="stroke:#D85A30;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="133" x="73.8221" y="228.8972">View Reported Incidents</text><ellipse cx="494.286" cy="226.1593" fill="#FFFFFF" filter="url(#f1cap06nvl1cdr)" rx="82.196" ry="35.0187" style="stroke:#D85A30;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="100" x="444.286" y="213.9757">Assess &amp; Classify</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="88" x="450.286" y="229.0695">Incident Severity</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="0" x="495.786" y="244.1632"/><ellipse cx="710.3391" cy="226.2904" fill="#FFFFFF" filter="url(#f1cap06nvl1cdr)" rx="98.7491" ry="22.1498" style="stroke:#D85A30;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="164" x="628.3391" y="229.2006">Dispatch Emergency Services</text><ellipse cx="318.3124" cy="226.2851" fill="#FFFFFF" filter="url(#f1cap06nvl1cdr)" rx="58.7224" ry="14.1445" style="stroke:#D85A30;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="70" x="283.0973" y="229.242">Issue E-Fine</text><ellipse cx="710.2439" cy="355.0714" fill="#F5F5F5" filter="url(#f1cap06nvl1cdr)" rx="67.6539" ry="15.9308" style="stroke:#D85A30;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="93" x="663.7439" y="357.9816">Send Notification</text><ellipse cx="387.3074" cy="355.3163" fill="#F5F5F5" filter="url(#f1cap06nvl1cdr)" rx="53.2174" ry="13.6756" style="stroke:#D85A30;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="59" x="357.0041" y="358.3972">Log Activity</text><!--MD5=[29ca8a179d4274849e0e3e16da3f9f3e]
+entity Police--><ellipse cx="428.09" cy="44.6406" fill="#FEFECE" filter="url(#f1cap06nvl1cdr)" rx="16" ry="16" style="stroke:#D85A30;stroke-width:1.5;"/><path d="M428.09,64.6406 C432.09,64.6406 435.09,64.6406 439.09,60.6406 C447.09,60.6406 455.09,68.6406 455.09,76.6406 L455.09,80.6406 C455.09,84.6406 451.09,88.6406 447.09,88.6406 L409.09,88.6406 C405.09,88.6406 401.09,84.6406 401.09,80.6406 L401.09,76.6406 C401.09,68.6406 409.09,60.6406 417.09,60.6406 C421.09,64.6406 424.09,64.6406 428.09,64.6406 " fill="#FEFECE" filter="url(#f1cap06nvl1cdr)" style="stroke:#D85A30;stroke-width:1.5;"/><text fill="#D85A30" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="386.09" y="104.6738">Police Officer</text><!--MD5=[07729cf5b28b2d33997226a79963b24f]
+link Police to UC_Register--><path d="M385.87,70.6306 C294.21,75.9406 81.74,93.8306 38.09,147.1406 C6,186.3406 21.39,213.3106 38.09,261.1406 C49.93,295.0306 79.86,325.8206 97.82,342.0606 " fill="none" id="Police-UC_Register" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[a6a5acc116b1dbc0157fdced50ed3891]
+link Police to UC_Login--><path d="M470.18,71.2906 C596.1,79.6506 963.35,107.2806 998.09,147.1406 C1045.88,201.9606 1021.87,253.4606 975.09,309.1406 C962.82,323.7506 944.78,336.0006 931.14,344.0106 " fill="none" id="Police-UC_Login" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[99a17e38bc3b67a908e1999da50ce4a2]
+link Police to UC_ViewInc--><path d="M386.02,82.9206 C347.35,96.8406 289.07,119.8606 242.09,147.1406 C211.83,164.7206 180.32,190.0706 160.48,207.0506 " fill="none" id="Police-UC_ViewInc" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6da703c5c7a1d736e528c0b02ff8b8db]
+link Police to UC_Classify--><path d="M444.92,108.5406 C455.73,134.1706 469.61,167.0906 479.87,191.4106 " fill="none" id="Police-UC_Classify" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[dcaa4709588163030ec37865366d5990]
+link Police to UC_Dispatch--><path d="M470.24,86.4706 C504.33,101.3806 553.21,123.9006 594.09,147.1406 C625.32,164.8906 659.21,188.1806 682.25,204.6806 " fill="none" id="Police-UC_Dispatch" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[f1b1aba06e2c74410d9e45dcfe39e7e8]
+link Police to UC_Fine--><path d="M400.05,108.5406 C376.12,142.5906 343.14,189.5106 327.3,212.0406 " fill="none" id="Police-UC_Fine" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[cf6fba3b6f7a8de8241591a2310fd60f]
+link UC_Register to UC_Auth--><path d="M134.99,366.9406 C175.52,386.0606 260.12,425.9706 307.7,448.4106 " fill="none" id="UC_Register-to-UC_Auth" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="312.46,450.6606,306.0448,443.1877,307.9431,448.5165,302.6142,450.4148,312.46,450.6606" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55" x="241.09" y="415.6357">«include»</text><!--MD5=[b4148fe85064e9a3c05528a8ba619de2]
+link UC_Login to UC_Auth--><path d="M882.65,361.7406 C792.57,378.8906 519.59,430.8506 399.65,453.6806 " fill="none" id="UC_Login-to-UC_Auth" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="394.41,454.6806,404.0025,456.9132,399.3204,453.7385,402.4951,449.0565,394.41,454.6806" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55" x="662.09" y="415.6357">«include»</text><!--MD5=[d7061927048dfa4cbea291b727971195]
+link UC_Dispatch to UC_Notify--><path d="M710.09,248.4006 C710.09,272.1606 710.09,310.3706 710.09,333.7706 " fill="none" id="UC_Dispatch-to-UC_Notify" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="710.09,338.8106,714.09,329.8106,710.09,333.8106,706.09,329.8106,710.09,338.8106" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55" x="711.09" y="305.6357">«include»</text><!--MD5=[a8dc737ea2d5ef0b3179b2470a3bcb13]
+link UC_Fine to UC_Log--><path d="M323.11,240.3106 C329.62,256.8306 341.72,285.8406 355.09,309.1406 C360.65,318.8206 367.77,329.0106 373.89,337.2306 " fill="none" id="UC_Fine-to-UC_Log" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="377.16,341.5806,374.9435,331.9844,374.1531,337.5858,368.5518,336.7954,377.16,341.5806" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55" x="356.09" y="305.6357">«include»</text><!--MD5=[f100bc13bfb99e7ad43d30e00d042acc]
+link UC_Classify to UC_Log--><path d="M466.82,259.5206 C445.78,284.4906 417.55,318.0006 400.94,337.7106 " fill="none" id="UC_Classify-to-UC_Log" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="397.58,341.7006,406.4304,337.3797,400.795,337.8713,400.3034,332.2358,397.58,341.7006" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55" x="438.09" y="305.6357">«include»</text><!--MD5=[d109000c84686bd2c63a5a21c6518974]
+link UC_Forgot to UC_Login--><path d="M912.09,242.2106 C912.09,265.7606 912.09,311.2106 912.09,336.3406 " fill="none" id="UC_Forgot-to-UC_Login" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="912.09,341.3806,916.09,332.3806,912.09,336.3806,908.09,332.3806,912.09,341.3806" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="53" x="913.09" y="305.6357">«extend»</text><!--MD5=[5bfae17b3d8d808b25152dd8a3a28018]
+@startuml Police_UseCase
+
+skinparam backgroundColor #FFFFFF
+skinparam actorStyle awesome
+skinparam usecase {
+  BackgroundColor #FFFFFF
+  BorderColor #D85A30
+  FontSize 12
+}
+skinparam actor {
+  BorderColor #D85A30
+  FontColor #D85A30
+}
+
+title Police Officer — Use Case Diagram
+
+actor "Police Officer" as Police
+
+rectangle "Traffic Safety Mobile Application" {
+
+  ' ── AUTH ──
+  usecase "Register" as UC_Register
+  usecase "Login" as UC_Login
+  usecase "Forgot Password" as UC_Forgot
+  usecase "Authenticate User" as UC_Auth #F5F5F5
+
+  ' ── MAIN USE CASES ──
+  usecase "View Reported Incidents" as UC_ViewInc
+  usecase "Assess & Classify\nIncident Severity\n" as UC_Classify
+  usecase "Dispatch Emergency Services" as UC_Dispatch
+  usecase "Issue E-Fine" as UC_Fine
+
+  ' ── INCLUDED ──
+  usecase "Send Notification" as UC_Notify #F5F5F5
+  usecase "Log Activity" as UC_Log #F5F5F5
+
+}
+
+' ── ASSOCIATIONS ──
+Police - - UC_Register
+Police - - UC_Login
+Police - - UC_ViewInc
+Police - - UC_Classify
+Police - - UC_Dispatch
+Police - - UC_Fine
+
+' ── INCLUDE ──
+UC_Register ..> UC_Auth   : <<include>>
+UC_Login    ..> UC_Auth   : <<include>>
+UC_Dispatch ..> UC_Notify : <<include>>
+UC_Fine     ..> UC_Log    : <<include>>
+UC_Classify ..> UC_Log    : <<include>>
+
+' ── EXTEND ──
+UC_Forgot ..> UC_Login : <<extend>>
+
+@enduml
+
+@startuml Police_UseCase
+
+skinparam backgroundColor #FFFFFF
+skinparam actorStyle awesome
+skinparam usecase {
+  BackgroundColor #FFFFFF
+  BorderColor #D85A30
+  FontSize 12
+}
+skinparam actor {
+  BorderColor #D85A30
+  FontColor #D85A30
+}
+
+title Police Officer — Use Case Diagram
+
+actor "Police Officer" as Police
+
+rectangle "Traffic Safety Mobile Application" {
+
+  usecase "Register" as UC_Register
+  usecase "Login" as UC_Login
+  usecase "Forgot Password" as UC_Forgot
+  usecase "Authenticate User" as UC_Auth #F5F5F5
+
+  usecase "View Reported Incidents" as UC_ViewInc
+  usecase "Assess & Classify\nIncident Severity\n" as UC_Classify
+  usecase "Dispatch Emergency Services" as UC_Dispatch
+  usecase "Issue E-Fine" as UC_Fine
+
+  usecase "Send Notification" as UC_Notify #F5F5F5
+  usecase "Log Activity" as UC_Log #F5F5F5
+
+}
+
+Police - - UC_Register
+Police - - UC_Login
+Police - - UC_ViewInc
+Police - - UC_Classify
+Police - - UC_Dispatch
+Police - - UC_Fine
+
+UC_Register ..> UC_Auth   : <<include>>
+UC_Login    ..> UC_Auth   : <<include>>
+UC_Dispatch ..> UC_Notify : <<include>>
+UC_Fine     ..> UC_Log    : <<include>>
+UC_Classify ..> UC_Log    : <<include>>
+
+UC_Forgot ..> UC_Login : <<extend>>
+
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 12:25:05 EET 2021)
+(MIT source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

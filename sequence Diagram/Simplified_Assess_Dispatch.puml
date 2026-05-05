@@ -1,0 +1,42 @@
+@startuml Simplified_Assess_Dispatch_Sequence
+
+' ═══════════════════════════════════
+' SETTINGS
+' ═══════════════════════════════════
+skinparam backgroundColor #FFFFFF
+skinparam sequence {
+    ArrowColor #333333
+    LifeLineBorderColor #333333
+    ParticipantBackgroundColor #FFFFFF
+    ParticipantBorderColor #333333
+}
+
+actor "Police Officer" as Police
+participant "Mobile App" as App
+participant "System" as System
+participant "Emergency Svcs" as Emergency
+
+' ═══════════════════════════════════
+' WORKFLOW
+' ═══════════════════════════════════
+
+Police -> App : Open & review incident
+App -> System : Fetch report details
+System -> App : Return full report
+
+' استخدام الـ Alt لتمثيل قرار الضابط (الخطورة)
+alt [Severe Incident]
+    Police -> App : Tap "Dispatch Emergency"
+    App -> System : Trigger dispatch alert
+    System -> Emergency : Notify emergency team
+    Emergency -> System : Confirm arrival
+    App -> Police : Show "Dispatched ✓"
+
+else [Minor Incident]
+    Police -> App : Tap "Issue e-fine"
+    App -> System : Save fine details
+    System -> App : Fine recorded
+    App -> Police : Show "Fine Issued ✓"
+end
+
+@enduml

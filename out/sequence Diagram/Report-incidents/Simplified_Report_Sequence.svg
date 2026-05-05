@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="516px" preserveAspectRatio="none" style="width:554px;height:516px;" version="1.1" viewBox="0 0 554 516" width="554px" zoomAndPan="magnify"><defs><filter height="300%" id="f1u8apwpc77pta" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#f1u8apwpc77pta)" height="216.2969" style="stroke:#000000;stroke-width:2.0;" width="530" x="10" y="197.6641"/><rect fill="#FFFFFF" height="46.1875" style="stroke:none;stroke-width:1.0;" width="530" x="10" y="367.7734"/><line style="stroke:#333333;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="42" x2="42" y1="89.6094" y2="430.9609"/><line style="stroke:#333333;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="201" x2="201" y1="89.6094" y2="430.9609"/><line style="stroke:#333333;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="333.5" x2="333.5" y1="89.6094" y2="430.9609"/><line style="stroke:#333333;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="485" x2="485" y1="89.6094" y2="430.9609"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="20" y="86.5332">Driver</text><ellipse cx="42" cy="15" fill="#FEFECE" filter="url(#f1u8apwpc77pta)" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;"/><path d="M42,23 L42,50 M29,31 L55,31 M42,50 L29,65 M42,50 L55,65 " fill="none" filter="url(#f1u8apwpc77pta)" style="stroke:#A80036;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="20" y="444.4941">Driver</text><ellipse cx="42" cy="457.5703" fill="#FEFECE" filter="url(#f1u8apwpc77pta)" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;"/><path d="M42,465.5703 L42,492.5703 M29,473.5703 L55,473.5703 M42,492.5703 L29,507.5703 M42,492.5703 L55,507.5703 " fill="none" filter="url(#f1u8apwpc77pta)" style="stroke:#A80036;stroke-width:2.0;"/><rect fill="#FFFFFF" filter="url(#f1u8apwpc77pta)" height="31.6094" style="stroke:#333333;stroke-width:1.5;" width="84" x="157" y="53"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="70" x="164" y="74.5332">Mobile App</text><rect fill="#FFFFFF" filter="url(#f1u8apwpc77pta)" height="31.6094" style="stroke:#333333;stroke-width:1.5;" width="84" x="157" y="429.9609"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="70" x="164" y="451.4941">Mobile App</text><rect fill="#FFFFFF" filter="url(#f1u8apwpc77pta)" height="31.6094" style="stroke:#333333;stroke-width:1.5;" width="119" x="272.5" y="53"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="105" x="279.5" y="74.5332">Backend System</text><rect fill="#FFFFFF" filter="url(#f1u8apwpc77pta)" height="31.6094" style="stroke:#333333;stroke-width:1.5;" width="119" x="272.5" y="429.9609"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="105" x="279.5" y="451.4941">Backend System</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="440" y="86.5332">Police Officer</text><ellipse cx="485" cy="15" fill="#FEFECE" filter="url(#f1u8apwpc77pta)" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;"/><path d="M485,23 L485,50 M472,31 L498,31 M485,50 L472,65 M485,50 L498,65 " fill="none" filter="url(#f1u8apwpc77pta)" style="stroke:#A80036;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="440" y="444.4941">Police Officer</text><ellipse cx="485" cy="457.5703" fill="#FEFECE" filter="url(#f1u8apwpc77pta)" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;"/><path d="M485,465.5703 L485,492.5703 M472,473.5703 L498,473.5703 M485,492.5703 L472,507.5703 M485,492.5703 L498,507.5703 " fill="none" filter="url(#f1u8apwpc77pta)" style="stroke:#A80036;stroke-width:2.0;"/><polygon fill="#333333" points="189,117.9609,199,121.9609,189,125.9609,193,121.9609" style="stroke:#333333;stroke-width:1.0;"/><line style="stroke:#333333;stroke-width:1.0;" x1="42" x2="195" y1="121.9609" y2="121.9609"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="128" x="49" y="117.1045">Tap "Report Accident"</text><polygon fill="#333333" points="53,148.3125,43,152.3125,53,156.3125,49,152.3125" style="stroke:#333333;stroke-width:1.0;"/><line style="stroke:#333333;stroke-width:1.0;" x1="47" x2="200" y1="152.3125" y2="152.3125"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="98" x="59" y="147.4561">Show report form</text><polygon fill="#333333" points="189,178.6641,199,182.6641,189,186.6641,193,182.6641" style="stroke:#333333;stroke-width:1.0;"/><line style="stroke:#333333;stroke-width:1.0;" x1="42" x2="195" y1="182.6641" y2="182.6641"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="120" x="49" y="177.8076">Submit report details</text><path d="M10,197.6641 L71,197.6641 L71,205.6641 L61,215.6641 L10,215.6641 L10,197.6641 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.0;"/><rect fill="none" height="216.2969" style="stroke:#000000;stroke-width:2.0;" width="530" x="10" y="197.6641"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="16" x="25" y="212.1592">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="138" x="86" y="211.083">[Successful Submission]</text><polygon fill="#333333" points="322,234.3672,332,238.3672,322,242.3672,326,238.3672" style="stroke:#333333;stroke-width:1.0;"/><line style="stroke:#333333;stroke-width:1.0;" x1="201" x2="328" y1="238.3672" y2="238.3672"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="109" x="208" y="233.5107">Save report + GPS</text><polygon fill="#333333" points="212,264.7188,202,268.7188,212,272.7188,208,268.7188" style="stroke:#333333;stroke-width:1.0;"/><line style="stroke:#333333;stroke-width:1.0;" x1="206" x2="333" y1="268.7188" y2="268.7188"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="81" x="218" y="263.8623">Confirm saved</text><polygon fill="#333333" points="53,295.0703,43,299.0703,53,303.0703,49,299.0703" style="stroke:#333333;stroke-width:1.0;"/><line style="stroke:#333333;stroke-width:1.0;" x1="47" x2="200" y1="299.0703" y2="299.0703"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="111" x="59" y="294.2139">Show "Success ✓"</text><polygon fill="#333333" points="473,325.4219,483,329.4219,473,333.4219,477,329.4219" style="stroke:#333333;stroke-width:1.0;"/><line style="stroke:#333333;stroke-width:1.0;" x1="334" x2="479" y1="329.4219" y2="329.4219"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="127" x="341" y="324.5654">Send emergency alert</text><polygon fill="#333333" points="345,355.7734,335,359.7734,345,363.7734,341,359.7734" style="stroke:#333333;stroke-width:1.0;"/><line style="stroke:#333333;stroke-width:1.0;" x1="339" x2="484" y1="359.7734" y2="359.7734"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="106" x="351" y="354.917">Acknowledge alert</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="10" x2="540" y1="368.7734" y2="368.7734"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="204" x="15" y="380.1924">[Submission Failed (e.g. No Internet)]</text><polygon fill="#333333" points="53,401.9609,43,405.9609,53,409.9609,49,405.9609" style="stroke:#333333;stroke-width:1.0;"/><line style="stroke:#333333;stroke-width:1.0;" x1="47" x2="200" y1="405.9609" y2="405.9609"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="135" x="59" y="401.1045">Show "Error: Try again"</text><!--MD5=[018135dbd2bc49d49ec331f372e2d3e3]
+@startuml Simplified_Report_Sequence
+
+' ═══════════════════════════════════
+' SETTINGS
+' ═══════════════════════════════════
+skinparam backgroundColor #FFFFFF
+skinparam sequence {
+    ArrowColor #333333
+    LifeLineBorderColor #333333
+    ParticipantBackgroundColor #FFFFFF
+    ParticipantBorderColor #333333
+}
+
+actor Driver
+participant "Mobile App" as App
+participant "Backend System" as System
+actor "Police Officer" as Police
+
+' ═══════════════════════════════════
+' WORKFLOW
+' ═══════════════════════════════════
+
+Driver -> App : Tap "Report Accident"
+App -> Driver : Show report form
+
+Driver -> App : Submit report details
+
+' استخدام Alt لتمثيل احتمالات النجاح أو الفشل
+alt Successful Submission
+    App -> System : Save report + GPS
+    System -> App : Confirm saved
+    App -> Driver : Show "Success ✓"
+    
+    ' تفعيل التنبيه للشرطة في حال النجاح فقط
+    System -> Police : Send emergency alert
+    Police -> System : Acknowledge alert
+
+else Submission Failed (e.g. No Internet)
+    App -> Driver : Show "Error: Try again"
+end
+
+@enduml
+
+@startuml Simplified_Report_Sequence
+
+skinparam backgroundColor #FFFFFF
+skinparam sequence {
+    ArrowColor #333333
+    LifeLineBorderColor #333333
+    ParticipantBackgroundColor #FFFFFF
+    ParticipantBorderColor #333333
+}
+
+actor Driver
+participant "Mobile App" as App
+participant "Backend System" as System
+actor "Police Officer" as Police
+
+
+Driver -> App : Tap "Report Accident"
+App -> Driver : Show report form
+
+Driver -> App : Submit report details
+
+alt Successful Submission
+    App -> System : Save report + GPS
+    System -> App : Confirm saved
+    App -> Driver : Show "Success ✓"
+    
+    System -> Police : Send emergency alert
+    Police -> System : Acknowledge alert
+
+else Submission Failed (e.g. No Internet)
+    App -> Driver : Show "Error: Try again"
+end
+
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 12:25:05 EET 2021)
+(MIT source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

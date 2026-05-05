@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="484px" preserveAspectRatio="none" style="width:673px;height:484px;" version="1.1" viewBox="0 0 673 484" width="673px" zoomAndPan="magnify"><defs><filter height="300%" id="f1i42ezmeel462" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect codeLine="17" fill="#FFFFFF" filter="url(#f1i42ezmeel462)" height="117.1797" id="User" style="stroke:#333333;stroke-width:1.5;" width="96" x="317.6213" y="7"/><rect fill="#F5F5F5" height="32" style="stroke:#333333;stroke-width:1.5;" width="96" x="317.6213" y="7"/><ellipse cx="349.7213" cy="23" fill="#A9DCDF" rx="11" ry="11" style="stroke:#333333;stroke-width:1.0;"/><path d="M351.9088,24.7656 L347.7681,24.7656 L347.3463,25.7969 L347.7681,25.7969 Q348.3775,25.7969 348.6431,26.0313 Q348.9088,26.2656 348.9088,26.6563 Q348.9088,27.0313 348.6431,27.2656 Q348.3775,27.5 347.7681,27.5 L345.4713,27.5 Q344.8619,27.5 344.6119,27.2656 Q344.3463,27.0313 344.3463,26.6406 Q344.3463,26.2656 344.6275,26.0313 Q344.8931,25.7813 345.5181,25.7969 L348.19,19.1406 L347.0806,19.1406 Q346.4713,19.1406 346.2056,18.9063 Q345.94,18.6719 345.94,18.2813 Q345.94,17.9063 346.2056,17.6719 Q346.4713,17.4375 347.0806,17.4375 L350.7525,17.4375 L354.1431,25.7969 Q354.7369,25.7969 354.9244,25.9375 Q355.315,26.2031 355.315,26.6563 Q355.315,27.0313 355.0494,27.2656 Q354.7994,27.5 354.19,27.5 L351.8931,27.5 Q351.2838,27.5 351.0181,27.2656 Q350.7525,27.0313 350.7525,26.6406 Q350.7525,26.2656 351.0181,26.0313 Q351.2838,25.7969 351.8931,25.7969 L352.315,25.7969 L351.9088,24.7656 Z M351.19,23.0625 L349.8306,19.6875 L348.4556,23.0625 L351.19,23.0625 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="26" x="367.5213" y="27.9102">User</text><line style="stroke:#333333;stroke-width:1.5;" x1="318.6213" x2="412.6213" y1="39" y2="39"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="72" x="323.6213" y="54.4189">-userID : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="67" x="323.6213" y="68.2549">-name : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="65" x="323.6213" y="82.0908">-email : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="52" x="323.6213" y="95.9268">-role : Role</text><line style="stroke:#333333;stroke-width:1.0;" x1="318.6213" x2="412.6213" y1="102.3438" y2="102.3438"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="84" x="323.6213" y="117.7627">+login() : Boolean</text><!--MD5=[eee9d396a8aca12c6c152931e8dc1ab6]
+class Driver--><rect codeLine="26" fill="#FFFFFF" filter="url(#f1i42ezmeel462)" height="89.5078" id="Driver" style="stroke:#333333;stroke-width:1.5;" width="124" x="22.6212" y="185"/><rect fill="#F5F5F5" height="32" style="stroke:#333333;stroke-width:1.5;" width="124" x="22.6212" y="185"/><ellipse cx="64.6213" cy="201" fill="#ADD1B2" rx="11" ry="11" style="stroke:#333333;stroke-width:1.0;"/><path d="M67.3869,196.875 Q67.5431,196.6563 67.7306,196.5469 Q67.9181,196.4375 68.1369,196.4375 Q68.5119,196.4375 68.7463,196.7031 Q68.9806,196.9531 68.9806,197.5625 L68.9806,199.0156 Q68.9806,199.625 68.7463,199.8906 Q68.5119,200.1563 68.1369,200.1563 Q67.7931,200.1563 67.59,199.9531 Q67.3869,199.7656 67.2775,199.25 Q67.2306,198.8906 67.0431,198.7031 Q66.715,198.3281 66.1056,198.1094 Q65.4963,197.8906 64.8713,197.8906 Q64.1056,197.8906 63.465,198.2188 Q62.84,198.5469 62.34,199.2969 Q61.8556,200.0469 61.8556,201.0781 L61.8556,202.1719 Q61.8556,203.4063 62.7463,204.2344 Q63.6369,205.0469 65.2306,205.0469 Q66.1681,205.0469 66.8244,204.7969 Q67.215,204.6406 67.6369,204.2031 Q67.9025,203.9375 68.0431,203.8594 Q68.1994,203.7813 68.4025,203.7813 Q68.7306,203.7813 68.9806,204.0469 Q69.2463,204.2969 69.2463,204.6406 Q69.2463,204.9844 68.9025,205.3906 Q68.4025,205.9688 67.6056,206.2969 Q66.5275,206.75 65.2306,206.75 Q63.715,206.75 62.5119,206.125 Q61.5275,205.625 60.84,204.5625 Q60.1525,203.4844 60.1525,202.2031 L60.1525,201.0469 Q60.1525,199.7188 60.7619,198.5781 Q61.3869,197.4219 62.4806,196.8125 Q63.5744,196.1875 64.8088,196.1875 Q65.5431,196.1875 66.1838,196.3594 Q66.84,196.5156 67.3869,196.875 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="32" x="84.6213" y="205.9102">Driver</text><line style="stroke:#333333;stroke-width:1.5;" x1="23.6212" x2="145.6213" y1="217" y2="217"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="112" x="28.6212" y="232.4189">-licenseNumber : String</text><line style="stroke:#333333;stroke-width:1.5;" x1="23.6212" x2="145.6213" y1="238.8359" y2="238.8359"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="80" x="28.6212" y="254.2549">+reportIncident()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="60" x="28.6212" y="268.0908">+sendSOS()</text><!--MD5=[698a8ca43bdef403f432bdc4dde428a3]
+class PoliceOfficer--><rect codeLine="32" fill="#FFFFFF" filter="url(#f1i42ezmeel462)" height="89.5078" id="PoliceOfficer" style="stroke:#333333;stroke-width:1.5;" width="120" x="181.6213" y="185"/><rect fill="#F5F5F5" height="32" style="stroke:#333333;stroke-width:1.5;" width="120" x="181.6213" y="185"/><ellipse cx="205.1713" cy="201" fill="#ADD1B2" rx="11" ry="11" style="stroke:#333333;stroke-width:1.0;"/><path d="M207.9369,196.875 Q208.0931,196.6563 208.2806,196.5469 Q208.4681,196.4375 208.6869,196.4375 Q209.0619,196.4375 209.2963,196.7031 Q209.5306,196.9531 209.5306,197.5625 L209.5306,199.0156 Q209.5306,199.625 209.2963,199.8906 Q209.0619,200.1563 208.6869,200.1563 Q208.3431,200.1563 208.14,199.9531 Q207.9369,199.7656 207.8275,199.25 Q207.7806,198.8906 207.5931,198.7031 Q207.265,198.3281 206.6556,198.1094 Q206.0463,197.8906 205.4213,197.8906 Q204.6556,197.8906 204.015,198.2188 Q203.39,198.5469 202.89,199.2969 Q202.4056,200.0469 202.4056,201.0781 L202.4056,202.1719 Q202.4056,203.4063 203.2963,204.2344 Q204.1869,205.0469 205.7806,205.0469 Q206.7181,205.0469 207.3744,204.7969 Q207.765,204.6406 208.1869,204.2031 Q208.4525,203.9375 208.5931,203.8594 Q208.7494,203.7813 208.9525,203.7813 Q209.2806,203.7813 209.5306,204.0469 Q209.7963,204.2969 209.7963,204.6406 Q209.7963,204.9844 209.4525,205.3906 Q208.9525,205.9688 208.1556,206.2969 Q207.0775,206.75 205.7806,206.75 Q204.265,206.75 203.0619,206.125 Q202.0775,205.625 201.39,204.5625 Q200.7025,203.4844 200.7025,202.2031 L200.7025,201.0469 Q200.7025,199.7188 201.3119,198.5781 Q201.9369,197.4219 203.0306,196.8125 Q204.1244,196.1875 205.3588,196.1875 Q206.0931,196.1875 206.7338,196.3594 Q207.39,196.5156 207.9369,196.875 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="69" x="221.0713" y="205.9102">PoliceOfficer</text><line style="stroke:#333333;stroke-width:1.5;" x1="182.6213" x2="300.6213" y1="217" y2="217"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="108" x="187.6213" y="232.4189">-badgeNumber : String</text><line style="stroke:#333333;stroke-width:1.5;" x1="182.6213" x2="300.6213" y1="238.8359" y2="238.8359"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="85" x="187.6213" y="254.2549">+reviewIncident()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="60" x="187.6213" y="268.0908">+issueFine()</text><!--MD5=[62e0fdaebd18eaf26c5bab875c2390f7]
+class EmergencyServices--><rect codeLine="38" fill="#FFFFFF" filter="url(#f1i42ezmeel462)" height="75.6719" id="EmergencyServices" style="stroke:#333333;stroke-width:1.5;" width="141" x="337.1213" y="192"/><rect fill="#F5F5F5" height="32" style="stroke:#333333;stroke-width:1.5;" width="141" x="337.1213" y="192"/><ellipse cx="352.1213" cy="208" fill="#ADD1B2" rx="11" ry="11" style="stroke:#333333;stroke-width:1.0;"/><path d="M354.8869,203.875 Q355.0431,203.6563 355.2306,203.5469 Q355.4181,203.4375 355.6369,203.4375 Q356.0119,203.4375 356.2463,203.7031 Q356.4806,203.9531 356.4806,204.5625 L356.4806,206.0156 Q356.4806,206.625 356.2463,206.8906 Q356.0119,207.1563 355.6369,207.1563 Q355.2931,207.1563 355.09,206.9531 Q354.8869,206.7656 354.7775,206.25 Q354.7306,205.8906 354.5431,205.7031 Q354.215,205.3281 353.6056,205.1094 Q352.9963,204.8906 352.3713,204.8906 Q351.6056,204.8906 350.965,205.2188 Q350.34,205.5469 349.84,206.2969 Q349.3556,207.0469 349.3556,208.0781 L349.3556,209.1719 Q349.3556,210.4063 350.2463,211.2344 Q351.1369,212.0469 352.7306,212.0469 Q353.6681,212.0469 354.3244,211.7969 Q354.715,211.6406 355.1369,211.2031 Q355.4025,210.9375 355.5431,210.8594 Q355.6994,210.7813 355.9025,210.7813 Q356.2306,210.7813 356.4806,211.0469 Q356.7463,211.2969 356.7463,211.6406 Q356.7463,211.9844 356.4025,212.3906 Q355.9025,212.9688 355.1056,213.2969 Q354.0275,213.75 352.7306,213.75 Q351.215,213.75 350.0119,213.125 Q349.0275,212.625 348.34,211.5625 Q347.6525,210.4844 347.6525,209.2031 L347.6525,208.0469 Q347.6525,206.7188 348.2619,205.5781 Q348.8869,204.4219 349.9806,203.8125 Q351.0744,203.1875 352.3088,203.1875 Q353.0431,203.1875 353.6838,203.3594 Q354.34,203.5156 354.8869,203.875 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="109" x="366.1213" y="212.9102">EmergencyServices</text><line style="stroke:#333333;stroke-width:1.5;" x1="338.1213" x2="477.1213" y1="224" y2="224"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="73" x="343.1213" y="239.4189">-teamID : String</text><line style="stroke:#333333;stroke-width:1.5;" x1="338.1213" x2="477.1213" y1="245.8359" y2="245.8359"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="103" x="343.1213" y="261.2549">+respondToIncident()</text><!--MD5=[db6d18d8099558415abc41d00477ab92]
+class Admin--><rect codeLine="43" fill="#FFFFFF" filter="url(#f1i42ezmeel462)" height="89.5078" id="Admin" style="stroke:#333333;stroke-width:1.5;" width="146" x="513.6213" y="185"/><rect fill="#F5F5F5" height="32" style="stroke:#333333;stroke-width:1.5;" width="146" x="513.6213" y="185"/><ellipse cx="564.8713" cy="201" fill="#ADD1B2" rx="11" ry="11" style="stroke:#333333;stroke-width:1.0;"/><path d="M567.6369,196.875 Q567.7931,196.6563 567.9806,196.5469 Q568.1681,196.4375 568.3869,196.4375 Q568.7619,196.4375 568.9963,196.7031 Q569.2306,196.9531 569.2306,197.5625 L569.2306,199.0156 Q569.2306,199.625 568.9963,199.8906 Q568.7619,200.1563 568.3869,200.1563 Q568.0431,200.1563 567.84,199.9531 Q567.6369,199.7656 567.5275,199.25 Q567.4806,198.8906 567.2931,198.7031 Q566.965,198.3281 566.3556,198.1094 Q565.7463,197.8906 565.1213,197.8906 Q564.3556,197.8906 563.715,198.2188 Q563.09,198.5469 562.59,199.2969 Q562.1056,200.0469 562.1056,201.0781 L562.1056,202.1719 Q562.1056,203.4063 562.9963,204.2344 Q563.8869,205.0469 565.4806,205.0469 Q566.4181,205.0469 567.0744,204.7969 Q567.465,204.6406 567.8869,204.2031 Q568.1525,203.9375 568.2931,203.8594 Q568.4494,203.7813 568.6525,203.7813 Q568.9806,203.7813 569.2306,204.0469 Q569.4963,204.2969 569.4963,204.6406 Q569.4963,204.9844 569.1525,205.3906 Q568.6525,205.9688 567.8556,206.2969 Q566.7775,206.75 565.4806,206.75 Q563.965,206.75 562.7619,206.125 Q561.7775,205.625 561.09,204.5625 Q560.4025,203.4844 560.4025,202.2031 L560.4025,201.0469 Q560.4025,199.7188 561.0119,198.5781 Q561.6369,197.4219 562.7306,196.8125 Q563.8244,196.1875 565.0588,196.1875 Q565.7931,196.1875 566.4338,196.3594 Q567.09,196.5156 567.6369,196.875 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="35" x="585.3713" y="205.9102">Admin</text><line style="stroke:#333333;stroke-width:1.5;" x1="514.6213" x2="658.6213" y1="217" y2="217"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="100" x="519.6213" y="232.4189">-adminLevel : Integer</text><line style="stroke:#333333;stroke-width:1.5;" x1="514.6213" x2="658.6213" y1="238.8359" y2="238.8359"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="81" x="519.6213" y="254.2549">+manageUsers()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="134" x="519.6213" y="268.0908">+generateSafetyAnalytics()</text><!--MD5=[c196e6e9294f83550a5d06156445b1f0]
+class IncidentReport--><rect codeLine="53" fill="#FFFFFF" filter="url(#f1i42ezmeel462)" height="117.1797" id="IncidentReport" style="stroke:#333333;stroke-width:1.5;" width="112" x="172.6213" y="353"/><rect fill="#F5F5F5" height="32" style="stroke:#333333;stroke-width:1.5;" width="112" x="172.6213" y="353"/><ellipse cx="187.6213" cy="369" fill="#ADD1B2" rx="11" ry="11" style="stroke:#333333;stroke-width:1.0;"/><path d="M190.3869,364.875 Q190.5431,364.6563 190.7306,364.5469 Q190.9181,364.4375 191.1369,364.4375 Q191.5119,364.4375 191.7463,364.7031 Q191.9806,364.9531 191.9806,365.5625 L191.9806,367.0156 Q191.9806,367.625 191.7463,367.8906 Q191.5119,368.1563 191.1369,368.1563 Q190.7931,368.1563 190.59,367.9531 Q190.3869,367.7656 190.2775,367.25 Q190.2306,366.8906 190.0431,366.7031 Q189.715,366.3281 189.1056,366.1094 Q188.4963,365.8906 187.8713,365.8906 Q187.1056,365.8906 186.465,366.2188 Q185.84,366.5469 185.34,367.2969 Q184.8556,368.0469 184.8556,369.0781 L184.8556,370.1719 Q184.8556,371.4063 185.7463,372.2344 Q186.6369,373.0469 188.2306,373.0469 Q189.1681,373.0469 189.8244,372.7969 Q190.215,372.6406 190.6369,372.2031 Q190.9025,371.9375 191.0431,371.8594 Q191.1994,371.7813 191.4025,371.7813 Q191.7306,371.7813 191.9806,372.0469 Q192.2463,372.2969 192.2463,372.6406 Q192.2463,372.9844 191.9025,373.3906 Q191.4025,373.9688 190.6056,374.2969 Q189.5275,374.75 188.2306,374.75 Q186.715,374.75 185.5119,374.125 Q184.5275,373.625 183.84,372.5625 Q183.1525,371.4844 183.1525,370.2031 L183.1525,369.0469 Q183.1525,367.7188 183.7619,366.5781 Q184.3869,365.4219 185.4806,364.8125 Q186.5744,364.1875 187.8088,364.1875 Q188.5431,364.1875 189.1838,364.3594 Q189.84,364.5156 190.3869,364.875 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="80" x="201.6213" y="373.9102">IncidentReport</text><line style="stroke:#333333;stroke-width:1.5;" x1="173.6213" x2="283.6213" y1="385" y2="385"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="79" x="178.6213" y="400.4189">-reportID : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="62" x="178.6213" y="414.2549">-type : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="178.6213" y="428.0908">-location : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="74" x="178.6213" y="441.9268">-status : Status</text><line style="stroke:#333333;stroke-width:1.0;" x1="173.6213" x2="283.6213" y1="448.3438" y2="448.3438"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="178.6213" y="463.7627">+updateStatus()</text><!--MD5=[e88074edab7bcea25d991d42bcd51d11]
+class EFine--><rect codeLine="62" fill="#FFFFFF" filter="url(#f1i42ezmeel462)" height="103.3438" id="EFine" style="stroke:#333333;stroke-width:1.5;" width="93" x="14.1213" y="360"/><rect fill="#F5F5F5" height="32" style="stroke:#333333;stroke-width:1.5;" width="93" x="14.1213" y="360"/><ellipse cx="42.1713" cy="376" fill="#ADD1B2" rx="11" ry="11" style="stroke:#333333;stroke-width:1.0;"/><path d="M44.9369,371.875 Q45.0931,371.6563 45.2806,371.5469 Q45.4681,371.4375 45.6869,371.4375 Q46.0619,371.4375 46.2963,371.7031 Q46.5306,371.9531 46.5306,372.5625 L46.5306,374.0156 Q46.5306,374.625 46.2963,374.8906 Q46.0619,375.1563 45.6869,375.1563 Q45.3431,375.1563 45.14,374.9531 Q44.9369,374.7656 44.8275,374.25 Q44.7806,373.8906 44.5931,373.7031 Q44.265,373.3281 43.6556,373.1094 Q43.0463,372.8906 42.4213,372.8906 Q41.6556,372.8906 41.015,373.2188 Q40.39,373.5469 39.89,374.2969 Q39.4056,375.0469 39.4056,376.0781 L39.4056,377.1719 Q39.4056,378.4063 40.2963,379.2344 Q41.1869,380.0469 42.7806,380.0469 Q43.7181,380.0469 44.3744,379.7969 Q44.765,379.6406 45.1869,379.2031 Q45.4525,378.9375 45.5931,378.8594 Q45.7494,378.7813 45.9525,378.7813 Q46.2806,378.7813 46.5306,379.0469 Q46.7963,379.2969 46.7963,379.6406 Q46.7963,379.9844 46.4525,380.3906 Q45.9525,380.9688 45.1556,381.2969 Q44.0775,381.75 42.7806,381.75 Q41.265,381.75 40.0619,381.125 Q39.0775,380.625 38.39,379.5625 Q37.7025,378.4844 37.7025,377.2031 L37.7025,376.0469 Q37.7025,374.7188 38.3119,373.5781 Q38.9369,372.4219 40.0306,371.8125 Q41.1244,371.1875 42.3588,371.1875 Q43.0931,371.1875 43.7338,371.3594 Q44.39,371.5156 44.9369,371.875 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="32" x="59.0712" y="380.9102">EFine</text><line style="stroke:#333333;stroke-width:1.5;" x1="15.1213" x2="106.1213" y1="392" y2="392"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="68" x="20.1213" y="407.4189">-fineID : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="81" x="20.1213" y="421.2549">-amount : Double</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="80" x="20.1213" y="435.0908">-isPaid : Boolean</text><line style="stroke:#333333;stroke-width:1.0;" x1="15.1213" x2="106.1213" y1="441.5078" y2="441.5078"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="40" x="20.1213" y="456.9268">+issue()</text><!--MD5=[a5f2c1a5b060e221742204f72ab2f9e6]
+class SafetyReport--><rect codeLine="70" fill="#FFFFFF" filter="url(#f1i42ezmeel462)" height="89.5078" id="SafetyReport" style="stroke:#333333;stroke-width:1.5;" width="121" x="526.1213" y="366.5"/><rect fill="#F5F5F5" height="32" style="stroke:#333333;stroke-width:1.5;" width="121" x="526.1213" y="366.5"/><ellipse cx="549.6713" cy="382.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#333333;stroke-width:1.0;"/><path d="M552.4369,378.375 Q552.5931,378.1563 552.7806,378.0469 Q552.9681,377.9375 553.1869,377.9375 Q553.5619,377.9375 553.7963,378.2031 Q554.0306,378.4531 554.0306,379.0625 L554.0306,380.5156 Q554.0306,381.125 553.7963,381.3906 Q553.5619,381.6563 553.1869,381.6563 Q552.8431,381.6563 552.64,381.4531 Q552.4369,381.2656 552.3275,380.75 Q552.2806,380.3906 552.0931,380.2031 Q551.765,379.8281 551.1556,379.6094 Q550.5463,379.3906 549.9213,379.3906 Q549.1556,379.3906 548.515,379.7188 Q547.89,380.0469 547.39,380.7969 Q546.9056,381.5469 546.9056,382.5781 L546.9056,383.6719 Q546.9056,384.9063 547.7963,385.7344 Q548.6869,386.5469 550.2806,386.5469 Q551.2181,386.5469 551.8744,386.2969 Q552.265,386.1406 552.6869,385.7031 Q552.9525,385.4375 553.0931,385.3594 Q553.2494,385.2813 553.4525,385.2813 Q553.7806,385.2813 554.0306,385.5469 Q554.2963,385.7969 554.2963,386.1406 Q554.2963,386.4844 553.9525,386.8906 Q553.4525,387.4688 552.6556,387.7969 Q551.5775,388.25 550.2806,388.25 Q548.765,388.25 547.5619,387.625 Q546.5775,387.125 545.89,386.0625 Q545.2025,384.9844 545.2025,383.7031 L545.2025,382.5469 Q545.2025,381.2188 545.8119,380.0781 Q546.4369,378.9219 547.5306,378.3125 Q548.6244,377.6875 549.8588,377.6875 Q550.5931,377.6875 551.2338,377.8594 Q551.89,378.0156 552.4369,378.375 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="70" x="565.5713" y="387.4102">SafetyReport</text><line style="stroke:#333333;stroke-width:1.5;" x1="527.1213" x2="646.1213" y1="398.5" y2="398.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="79" x="532.1213" y="413.9189">-reportID : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="109" x="532.1213" y="427.7549">-totalIncidents : Integer</text><line style="stroke:#333333;stroke-width:1.0;" x1="527.1213" x2="646.1213" y1="434.1719" y2="434.1719"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="64" x="532.1213" y="449.5908">+exportPDF()</text><!--MD5=[5f8573aad75b317e018596eaf6af6390]
+reverse link User to Driver--><path codeLine="81" d="M299.7913,104.57 C253.5813,131.29 192.1813,166.8 146.8013,193.04 " fill="none" id="User-backto-Driver" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="296.5013,98.39,317.3212,94.43,303.5113,110.51,296.5013,98.39" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[45d7ecc415bc069244a47f6aacec8fe0]
+reverse link User to PoliceOfficer--><path codeLine="82" d="M309.1513,140.51 C297.5513,155.71 285.6912,171.25 275.2213,184.98 " fill="none" id="User-backto-PoliceOfficer" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="303.8613,135.9,321.5513,124.25,314.9913,144.4,303.8613,135.9" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[649f4cd03a328c94235955eef3ed95ca]
+reverse link User to EmergencyServices--><path codeLine="83" d="M385.5613,143.63 C389.8913,160.38 394.2813,177.37 397.9913,191.73 " fill="none" id="User-backto-EmergencyServices" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="378.7813,145.36,380.5513,124.25,392.3312,141.86,378.7813,145.36" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[933987b91d2b08b1b4941f3221fa6cec]
+reverse link User to Admin--><path codeLine="84" d="M430.1213,113.93 C460.6113,136.34 496.7813,162.94 526.6713,184.91 " fill="none" id="User-backto-Admin" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="425.8113,119.45,413.8513,101.96,434.1113,108.17,425.8113,119.45" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b1f4a7ab75ce34161634af858563616c]
+link Driver to IncidentReport--><path codeLine="86" d="M94.3913,275.13 C99.3212,291.18 106.4813,308.84 116.6213,323 C131.4813,343.77 152.6412,362.05 172.5613,376.45 " fill="none" id="Driver-IncidentReport" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46" x="117.6213" y="319.4951">submits</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="88.273" y="296.1558">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="20" x="144.5102" y="368.7089">0..*</text><!--MD5=[fbfd2825516f5c1eb810e93322cc8fba]
+link PoliceOfficer to IncidentReport--><path codeLine="87" d="M246.4913,275.17 C247.3813,284.98 248.1713,295.33 248.6213,305 C249.0013,312.99 249.5213,315.05 248.6213,323 C247.5213,332.76 245.7513,343.01 243.7113,352.92 " fill="none" id="PoliceOfficer-IncidentReport" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="50" x="250.6213" y="319.4951">validates</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="239.6753" y="295.8665">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="20" x="224.3316" y="342.3112">0..*</text><!--MD5=[13a32fef9d55c77915bb6b032aa9637a]
+link PoliceOfficer to EFine--><path codeLine="88" d="M209.6813,275.24 C197.5313,290.96 183.1113,308.36 168.6213,323 C149.7813,342.04 126.9713,361.02 107.1813,376.41 " fill="none" id="PoliceOfficer-EFine" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="38" x="185.6213" y="319.4951">issues</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="197.919" y="295.9459">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="20" x="115.135" y="367.8461">0..*</text><!--MD5=[b6a0a500860182be3714db478691c334]
+link Driver to EFine--><path codeLine="89" d="M43.3012,275.22 C36.8613,284.45 31.1813,294.56 27.6213,305 C21.5613,322.8 24.9813,342.44 31.5013,359.89 " fill="none" id="Driver-EFine" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="47" x="28.6213" y="319.4951">receives</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="30.2786" y="295.9232">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="20" x="6" y="349.003">0..*</text><!--MD5=[08e305197dd55359e4fb4d197f94fb4d]
+link Admin to SafetyReport--><path codeLine="90" d="M586.6213,275.37 C586.6213,303.09 586.6213,338.65 586.6213,366.33 " fill="none" id="Admin-SafetyReport" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="50" x="587.6213" y="319.4951">monitors</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="579.1509" y="296.0934">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="20" x="565.09" y="355.7481">0..*</text><!--MD5=[8b23a5b9255a649f57655367e3600fa9]
+@startuml Simplified_Traffic_Safety_ClassDiagram
+
+' ═══════════════════════════════════
+' SETTINGS
+' ═══════════════════════════════════
+skinparam backgroundColor #FFFFFF
+skinparam classAttributeIconSize 0
+skinparam class {
+  BackgroundColor #FFFFFF
+  BorderColor #333333
+  HeaderBackgroundColor #F5F5F5
+}
+
+' ═══════════════════════════════════
+' USER HIERARCHY
+' ═══════════════════════════════════
+
+abstract class User {
+  - userID : String
+  - name : String
+  - email : String
+  - role : Role
+  - -
+  + login() : Boolean
+}
+
+class Driver {
+  - licenseNumber : String
+  + reportIncident()
+  + sendSOS()
+}
+
+class PoliceOfficer {
+  - badgeNumber : String
+  + reviewIncident()
+  + issueFine()
+}
+
+class EmergencyServices {
+  - teamID : String
+  + respondToIncident()
+}
+
+class Admin {
+  - adminLevel : Integer
+  + manageUsers()
+  + generateSafetyAnalytics()
+}
+
+' ═══════════════════════════════════
+' CORE ENTITIES
+' ═══════════════════════════════════
+
+class IncidentReport {
+  - reportID : String
+  - type : String
+  - location : String
+  - status : Status
+  - -
+  + updateStatus()
+}
+
+class EFine {
+  - fineID : String
+  - amount : Double
+  - isPaid : Boolean
+  - -
+  + issue()
+}
+
+class SafetyReport {
+  - reportID : String
+  - totalIncidents : Integer
+  - -
+  + exportPDF()
+}
+
+' ═══════════════════════════════════
+' RELATIONSHIPS
+' ═══════════════════════════════════
+
+User <|- - Driver
+User <|- - PoliceOfficer
+User <|- - EmergencyServices
+User <|- - Admin
+
+Driver "1" - - "0..*" IncidentReport : "submits"
+PoliceOfficer "1" - - "0..*" IncidentReport : "validates"
+PoliceOfficer "1" - - "0..*" EFine : "issues"
+Driver "1" - - "0..*" EFine : "receives"
+Admin "1" - - "0..*" SafetyReport : "monitors"
+
+@enduml
+
+@startuml Simplified_Traffic_Safety_ClassDiagram
+
+skinparam backgroundColor #FFFFFF
+skinparam classAttributeIconSize 0
+skinparam class {
+  BackgroundColor #FFFFFF
+  BorderColor #333333
+  HeaderBackgroundColor #F5F5F5
+}
+
+
+abstract class User {
+  - userID : String
+  - name : String
+  - email : String
+  - role : Role
+  - -
+  + login() : Boolean
+}
+
+class Driver {
+  - licenseNumber : String
+  + reportIncident()
+  + sendSOS()
+}
+
+class PoliceOfficer {
+  - badgeNumber : String
+  + reviewIncident()
+  + issueFine()
+}
+
+class EmergencyServices {
+  - teamID : String
+  + respondToIncident()
+}
+
+class Admin {
+  - adminLevel : Integer
+  + manageUsers()
+  + generateSafetyAnalytics()
+}
+
+
+class IncidentReport {
+  - reportID : String
+  - type : String
+  - location : String
+  - status : Status
+  - -
+  + updateStatus()
+}
+
+class EFine {
+  - fineID : String
+  - amount : Double
+  - isPaid : Boolean
+  - -
+  + issue()
+}
+
+class SafetyReport {
+  - reportID : String
+  - totalIncidents : Integer
+  - -
+  + exportPDF()
+}
+
+
+User <|- - Driver
+User <|- - PoliceOfficer
+User <|- - EmergencyServices
+User <|- - Admin
+
+Driver "1" - - "0..*" IncidentReport : "submits"
+PoliceOfficer "1" - - "0..*" IncidentReport : "validates"
+PoliceOfficer "1" - - "0..*" EFine : "issues"
+Driver "1" - - "0..*" EFine : "receives"
+Admin "1" - - "0..*" SafetyReport : "monitors"
+
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 12:25:05 EET 2021)
+(MIT source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

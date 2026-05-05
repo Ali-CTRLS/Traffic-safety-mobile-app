@@ -1,0 +1,260 @@
+\documentclass[11pt,a4paper]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{margin=0.8in}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage[most]{tcolorbox} % For professional frames
+
+% --- Path Configuration ---
+\graphicspath{{out/}} % Assuming rendered diagrams are in the 'out' directory
+
+% --- Colors ---
+\definecolor{primary}{HTML}{1D9E75} % Green color matching the Driver diagram
+\definecolor{secondary}{HTML}{E8F5F1}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    filecolor=magenta,      
+    urlcolor=primary,
+}
+
+% --- Header and Footer ---
+\setlength{\headheight}{14.5pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textbf{Traffic Safety SRS}}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{\footnotesize Traffic Safety Dept. \textperiodcentered\ 2026}
+
+% --- Formatting ---
+\titleformat{\section}{\normalfont\Large\bfseries\color{primary}}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\color{primary}}{\thesubsection}{1em}{}
+\setlist[itemize]{noitemsep, topsep=2pt}
+
+% --- Custom Command for Models ---
+\newtcolorbox{modelbox}[1]{
+    colback=white,
+    colframe=primary!50,
+    fonttitle=\bfseries,
+    title=#1,
+    sharp corners,
+    boxrule=0.5pt,
+    halign=center,
+    valign=center,
+    drop shadow
+}
+
+% --- Document Information ---
+\begin{document}
+
+% --- Professional Header ---
+\begin{center}
+    {\Huge \textbf{Software Requirements Specification}} \\
+    \vspace{0.3cm}
+    {\LARGE \textbf{Traffic Safety Mobile Application}} \\
+    \vspace{0.6cm}
+    \textbf{Prepared by:} Antigravity AI \\
+    \vspace{0.2cm}
+    \textbf{Organization:} Traffic Safety Dept. \\
+    \vspace{0.4cm}
+    \hrule
+\end{center}
+
+\tableofcontents
+\newpage
+
+% --- Section 1: Introduction ---
+\section{Introduction}
+
+\subsection{Purpose}
+The purpose of this document is to define the Software Requirements Specification (SRS) for the \textbf{Traffic Safety Mobile Application (Version 1.0)}. This document outlines the functional and non-functional requirements of the system, acting as a comprehensive guide for developers, project managers, and stakeholders. It covers the entire scope of the system, including accident reporting, emergency dispatching, and user management.
+
+\subsection{Document Conventions}
+This document follows professional SRS standards. Priority levels (High, Medium, Low) are assigned to system features to guide development. Requirements are identified by unique tags (e.g., \texttt{REQ-1}).
+
+\subsection{Intended Audience and Reading Suggestions}
+This document is intended for:
+\begin{itemize}
+    \item \textbf{Developers \& QA Testers:} To understand technical implementations and write test cases.
+    \item \textbf{Project Managers:} To track feature development and define milestones.
+    \item \textbf{Stakeholders:} To ensure alignment with road safety objectives.
+\end{itemize}
+\textit{Suggestion:} Readers should start with Section 2 for context before proceeding to the detailed features in Section 4.
+
+\subsection{Product Scope}
+The Traffic Safety Mobile Application is a multi-platform mobile system that allows drivers to report incidents, police officers to manage traffic events, and emergency services to respond to alerts in real-time. The primary goals are reducing emergency response times and providing real-time traffic safety information to citizens.
+
+\subsection{References}
+\begin{itemize}
+    \item \textbf{UML Models:} Located in \texttt{plant-uml/} and \texttt{Activity-Diagram/}
+    \item \textbf{API Docs:} Google Maps Platform, Firebase Authentication
+\end{itemize}
+
+% --- Section 2: Overall Description ---
+\section{Overall Description}
+
+\subsection{Product Perspective}
+The product is a new, self-contained mobile ecosystem designed to bridge the gap between citizens (drivers) and official authorities (Police, Emergency Services). It integrates GPS tracking, multimedia reporting, and real-time notification services.
+
+\subsection{Product Functions}
+Based on the system's architecture, the application provides the following major functions:
+\begin{itemize}
+    \item \textbf{Citizen (Driver) Portal:} Reporting accidents/hazards, SOS alerts, and live navigation.
+    \item \textbf{Police Officer Portal:} Incident classification, dispatching services, and issuing e-fines.
+    \item \textbf{Emergency Services Portal:} Receiving dispatch alerts, navigating to scenes, and updating status.
+    \item \textbf{Administrative Portal:} User management, system configuration, and analytics reporting.
+\end{itemize}
+
+\subsection{User Classes and Characteristics}
+\begin{itemize}
+    \item \textbf{Driver:} General public users; requires an intuitive and highly accessible UI.
+    \item \textbf{Police Officer:} Field personnel; requires rapid access to incident data and dispatch tools.
+    \item \textbf{Emergency Services:} First responders; requires precise location data and navigation.
+    \item \textbf{Administrator:} Technical staff; manages system integrity and data analytics.
+\end{itemize}
+
+\subsection{Operating Environment}
+\begin{itemize}
+    \item \textbf{Platform:} Android 10+ and iOS 14+.
+    \item \textbf{Backend:} Cloud-hosted infrastructure (Node.js/Firebase).
+    \item \textbf{External Interfaces:} Google Maps API for navigation.
+\end{itemize}
+
+\subsection{Design and Implementation Constraints}
+\begin{itemize}
+    \item \textbf{Connectivity:} Must handle intermittent data connection in remote areas.
+    \item \textbf{Security:} Data encryption for sensitive user information and police logs.
+    \item \textbf{Privacy:} Adherence to GDPR and local data protection regulations.
+\end{itemize}
+
+\subsection{User Documentation}
+Integrated in-app tutorials for drivers and an online help center for emergency personnel and administrators.
+
+% --- Section 3: External Interface Requirements ---
+\section{External Interface Requirements}
+
+\subsection{User Interfaces}
+\begin{itemize}
+    \item \textbf{Citizen UI:} Simplified dashboard with "One-Tap SOS" and "Report" buttons.
+    \item \textbf{Authority UI:} Map-centric view showing active incidents and unit locations.
+    \item \textbf{Admin UI:} Web-based dashboard for data management and reporting.
+\end{itemize}
+
+\subsection{Software \& Hardware Interfaces}
+\begin{itemize}
+    \item \textbf{Hardware:} Access to GPS for location and Camera for multimedia attachments.
+    \item \textbf{Software Interfaces:} Firebase Auth for authentication and Cloud Firestore for real-time data.
+    \item \textbf{External API:} Google Maps API for rendering routes and maps.
+\end{itemize}
+
+\subsection{Communications Interfaces}
+\begin{itemize}
+    \item \textbf{HTTPS:} Port 443 for all secure data transmission.
+    \item \textbf{FCM:} Firebase Cloud Messaging for real-time dispatch and safety notifications.
+\end{itemize}
+
+% --- Section 4: System Features ---
+\section{System Features}
+
+\subsection{Accident Reporting}
+\textbf{Priority: High.} Allows drivers to submit detailed reports of road accidents.
+\begin{itemize}[label=--]
+    \item \texttt{REQ-1}: System MUST capture GPS coordinates automatically during report submission.
+    \item \texttt{REQ-2}: System SHOULD allow optional photo/video attachments.
+\end{itemize}
+
+\subsection{Emergency Dispatch}
+\textbf{Priority: High.} Enables Police Officers to send alerts to Emergency Units.
+\begin{itemize}[label=--]
+    \item \texttt{REQ-3}: System MUST provide real-time notification to the selected emergency unit.
+\end{itemize}
+
+\subsection{Traffic Alerts \& Navigation}
+\textbf{Priority: Medium.} Drivers can view real-time hazards and navigate safely.
+\begin{itemize}[label=--]
+    \item \texttt{REQ-4}: System SHOULD display live traffic alerts on the navigation map.
+\end{itemize}
+
+% --- Section 5: Other Requirements & Rules ---
+\section{Other Requirements}
+
+\subsection{Performance \& Security}
+\begin{itemize}
+    \item SOS alerts must be transmitted within 2 seconds of the user's action.
+    \item Maps must load within 3 seconds under 4G connectivity.
+    \item All user data must be encrypted at rest and in transit.
+\end{itemize}
+
+\subsection{Software Quality \& Business Rules}
+\begin{itemize}
+    \item \textbf{Availability:} 99.9\% uptime target for the dispatch system.
+    \item \texttt{BR-1}: Only verified Police Officers can issue E-Fines.
+    \item \texttt{BR-2}: Emergency units only see incidents assigned to them.
+\end{itemize}
+
+% --- Section 6: Analysis Models (Visualizations) ---
+\section{Visual Architecture Models}
+\label{sec:models}
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \begin{modelbox}{Driver Use Case}
+            \includegraphics[width=0.9\textwidth]{Driver_UseCase.png}
+        \end{modelbox}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \begin{modelbox}{Police Use Case}
+            \includegraphics[width=0.9\textwidth]{Police_UseCase.png}
+        \end{modelbox}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \begin{modelbox}{Emergency Use Case}
+            \includegraphics[width=0.9\textwidth]{Emergency_UseCase.png}
+        \end{modelbox}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \begin{modelbox}{Admin Use Case}
+            \includegraphics[width=0.9\textwidth]{Admin_UseCase.png}
+        \end{modelbox}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \begin{modelbox}{Driver Activity Flow}
+            \includegraphics[width=0.9\textwidth]{Driver_Activity.png}
+        \end{modelbox}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \begin{modelbox}{Police Activity Flow}
+            \includegraphics[width=0.9\textwidth]{Police_Activity.png}
+        \end{modelbox}
+    \end{minipage}
+\end{figure}
+
+\section{Appendix}
+\textbf{Glossary:} SOS (Emergency Alert), FCM (Firebase Cloud Messaging), E-Fine (Electronic Fine). \\
+\textbf{TBD:} Specific legal requirements for e-fines, CCTV integration details.
+
+\end{document}

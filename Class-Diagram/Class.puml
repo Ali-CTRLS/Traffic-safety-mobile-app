@@ -1,0 +1,93 @@
+@startuml Simplified_Traffic_Safety_ClassDiagram
+
+' ═══════════════════════════════════
+' SETTINGS
+' ═══════════════════════════════════
+skinparam backgroundColor #FFFFFF
+skinparam classAttributeIconSize 0
+skinparam class {
+  BackgroundColor #FFFFFF
+  BorderColor #333333
+  HeaderBackgroundColor #F5F5F5
+}
+
+' ═══════════════════════════════════
+' USER HIERARCHY
+' ═══════════════════════════════════
+
+abstract class User {
+  - userID : String
+  - name : String
+  - email : String
+  - role : Role
+  --
+  + login() : Boolean
+}
+
+class Driver {
+  - licenseNumber : String
+  + reportIncident()
+  + sendSOS()
+}
+
+class PoliceOfficer {
+  - badgeNumber : String
+  + reviewIncident()
+  + issueFine()
+}
+
+class EmergencyServices {
+  - teamID : String
+  + respondToIncident()
+}
+
+class Admin {
+  - adminLevel : Integer
+  + manageUsers()
+  + generateSafetyAnalytics()
+}
+
+' ═══════════════════════════════════
+' CORE ENTITIES
+' ═══════════════════════════════════
+
+class IncidentReport {
+  - reportID : String
+  - type : String
+  - location : String
+  - status : Status
+  --
+  + updateStatus()
+}
+
+class EFine {
+  - fineID : String
+  - amount : Double
+  - isPaid : Boolean
+  --
+  + issue()
+}
+
+class SafetyReport {
+  - reportID : String
+  - totalIncidents : Integer
+  --
+  + exportPDF()
+}
+
+' ═══════════════════════════════════
+' RELATIONSHIPS
+' ═══════════════════════════════════
+
+User <|-- Driver
+User <|-- PoliceOfficer
+User <|-- EmergencyServices
+User <|-- Admin
+
+Driver "1" -- "0..*" IncidentReport : "submits"
+PoliceOfficer "1" -- "0..*" IncidentReport : "validates"
+PoliceOfficer "1" -- "0..*" EFine : "issues"
+Driver "1" -- "0..*" EFine : "receives"
+Admin "1" -- "0..*" SafetyReport : "monitors"
+
+@enduml

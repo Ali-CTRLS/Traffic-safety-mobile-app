@@ -26,7 +26,7 @@ rectangle "Traffic Safety Mobile Application" {
 
   ' ── MAIN USE CASES ──
   usecase "View Reported Incidents" as UC_ViewInc
-  usecase "Assess & Classify\nIncident Severity\n(👮 Officer Decides)" as UC_Classify
+  usecase "Assess & Classify\nIncident Severity\n" as UC_Classify
   usecase "Dispatch Emergency Services" as UC_Dispatch
   usecase "Issue E-Fine" as UC_Fine
 

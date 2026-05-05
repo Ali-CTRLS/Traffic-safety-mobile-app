@@ -1,0 +1,42 @@
+@startuml Simplified_Report_Sequence
+
+' ═══════════════════════════════════
+' SETTINGS
+' ═══════════════════════════════════
+skinparam backgroundColor #FFFFFF
+skinparam sequence {
+    ArrowColor #333333
+    LifeLineBorderColor #333333
+    ParticipantBackgroundColor #FFFFFF
+    ParticipantBorderColor #333333
+}
+
+actor Driver
+participant "Mobile App" as App
+participant "Backend System" as System
+actor "Police Officer" as Police
+
+' ═══════════════════════════════════
+' WORKFLOW
+' ═══════════════════════════════════
+
+Driver -> App : Tap "Report Accident"
+App -> Driver : Show report form
+
+Driver -> App : Submit report details
+
+' استخدام Alt لتمثيل احتمالات النجاح أو الفشل
+alt Successful Submission
+    App -> System : Save report + GPS
+    System -> App : Confirm saved
+    App -> Driver : Show "Success ✓"
+    
+    ' تفعيل التنبيه للشرطة في حال النجاح فقط
+    System -> Police : Send emergency alert
+    Police -> System : Acknowledge alert
+
+else Submission Failed (e.g. No Internet)
+    App -> Driver : Show "Error: Try again"
+end
+
+@enduml

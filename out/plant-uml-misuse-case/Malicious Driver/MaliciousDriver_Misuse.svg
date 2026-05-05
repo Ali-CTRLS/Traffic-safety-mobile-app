@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="416px" preserveAspectRatio="none" style="width:905px;height:416px;" version="1.1" viewBox="0 0 905 416" width="905px" zoomAndPan="magnify"><defs><filter height="300%" id="f1few1gomvd4xc" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="332" x="280" y="18.6855">Malicious Driver — Misuse Case Diagram</text><!--MD5=[a235da51a0dfdd40bff9cc0c8b2af1ea]
+cluster Traffic Safety Mobile Application--><rect fill="#FFFFFF" filter="url(#f1few1gomvd4xc)" height="249" style="stroke:#000000;stroke-width:1.5;" width="886" x="7" y="155.1406"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="225" x="337.5" y="171.6738">Traffic Safety Mobile Application</text><ellipse cx="159.0765" cy="220.6559" fill="#FFCCCC" filter="url(#f1few1gomvd4xc)" rx="135.5765" ry="29.5153" style="stroke:#333333;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="158" x="80.0765" y="216.0192">Submit Fake Accident Report</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="206" x="56.0765" y="231.113">(false data to waste police resources)</text><ellipse cx="459.7862" cy="220.5979" fill="#FFCCCC" filter="url(#f1few1gomvd4xc)" rx="130.2862" ry="28.4572" style="stroke:#333333;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="110" x="404.7862" y="215.9612">Spoof GPS Location</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="193" x="363.2862" y="231.0549">(fake coordinates in incident report)</text><ellipse cx="751.0063" cy="220.6419" fill="#FFCCCC" filter="url(#f1few1gomvd4xc)" rx="125.5063" ry="27.5013" style="stroke:#333333;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="127" x="687.5063" y="216.0052">Flood False SOS Alerts</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="181" x="660.5063" y="231.0989">(overwhelm emergency services)</text><ellipse cx="168.8843" cy="358.3175" fill="#CCFFEE" filter="url(#f1few1gomvd4xc)" rx="138.8843" ry="30.1769" style="stroke:#333333;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="113" x="112.3843" y="353.6808">Validate Report Data</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="214" x="61.8843" y="368.7745">(check completeness and consistency)</text><ellipse cx="461.9182" cy="358.0243" fill="#CCFFEE" filter="url(#f1few1gomvd4xc)" rx="117.4182" ry="25.8836" style="stroke:#333333;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="128" x="397.9182" y="353.3876">Verify GPS Coordinates</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="160" x="381.9182" y="368.4813">(cross-check location validity)</text><ellipse cx="748.929" cy="358.3264" fill="#CCFFEE" filter="url(#f1few1gomvd4xc)" rx="118.929" ry="26.1858" style="stroke:#333333;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="134" x="681.929" y="353.6897">Rate Limiting + Flagging</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="164" x="666.929" y="368.7835">(limit SOS frequency per user)</text><!--MD5=[fb11ef3c8167a1f271108ea2a9f3e093]
+entity MalDriver--><ellipse cx="460" cy="44.6406" fill="#CC0000" filter="url(#f1few1gomvd4xc)" rx="16" ry="16" style="stroke:#CC0000;stroke-width:1.5;"/><path d="M460,64.6406 C464,64.6406 467,64.6406 471,60.6406 C479,60.6406 487,68.6406 487,76.6406 L487,80.6406 C487,84.6406 483,88.6406 479,88.6406 L441,88.6406 C437,88.6406 433,84.6406 433,80.6406 L433,76.6406 C433,68.6406 441,60.6406 449,60.6406 C453,64.6406 456,64.6406 460,64.6406 " fill="#CC0000" filter="url(#f1few1gomvd4xc)" style="stroke:#CC0000;stroke-width:1.5;"/><text fill="#CC0000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="100" x="410" y="104.6738">Malicious Driver</text><!--MD5=[b9af7905c76688410ae2891811f648bb]
+link MalDriver to MU4--><path d="M409.96,93.7406 C355.04,121.2906 267.29,165.3206 211.44,193.3306 " fill="none" id="MalDriver-MU4" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[3e039fda770c70c46866cf0c223827ab]
+link MalDriver to MU5--><path d="M460,108.3106 C460,134.7006 460,168.6906 460,192.1406 " fill="none" id="MalDriver-MU5" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[2ebb501cd83ac54672debf802ceda454]
+link MalDriver to MU6--><path d="M510.02,94.6006 C564.3,122.7606 650.31,167.3906 703.56,195.0206 " fill="none" id="MalDriver-MU6" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[dfb7e70987ba16cf35ffb1c233fdcfae]
+link MU4 to SEC4--><path d="M116.44,248.8206 C100.66,262.5306 88.44,280.0606 97,298.1406 C102.08,308.8806 110.18,318.3106 119.15,326.3106 " fill="none" id="MU4-to-SEC4" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="123.03,329.6406,118.7999,320.7465,119.2337,326.3867,113.5935,326.8205,123.03,329.6406" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="68" x="98" y="294.6357">«threatens»</text><!--MD5=[d0d9b0b1669162475ee7c6a30fa47628]
+link SEC4 to MU4--><path d="M171.51,327.8206 C172.29,313.4306 172.59,295.8406 171,280.1406 C170.18,272.0306 168.73,263.3706 167.11,255.2806 " fill="none" id="SEC4-to-MU4" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="166.09,250.3206,163.9704,259.9387,167.0898,255.2196,171.8089,258.339,166.09,250.3206" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="67" x="174" y="294.6357">«mitigates»</text><!--MD5=[734a171124c22ac28a3b3a43a8d58dcb]
+link MU5 to SEC5--><path d="M386.85,244.4106 C359.57,257.1106 338.2,275.0706 352,298.1406 C361.31,313.6906 376.27,325.3806 392.21,334.0706 " fill="none" id="MU5-to-SEC5" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="396.72,336.4406,390.6156,328.7117,392.2945,334.1137,386.8925,335.7925,396.72,336.4406" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="68" x="353" y="294.6357">«threatens»</text><!--MD5=[c1b4918f4d5d50b02ef4aef5fd3f32f0]
+link SEC5 to MU5--><path d="M461.62,331.7206 C461.3,309.9206 460.84,278.3706 460.49,254.6306 " fill="none" id="SEC5-to-MU5" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="460.41,249.3906,456.539,258.4468,460.4814,254.3901,464.5382,258.3326,460.41,249.3906" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="67" x="462" y="294.6357">«mitigates»</text><!--MD5=[adb230021807a5f858e94cbb2cafaac9]
+link MU6 to SEC6--><path d="M686.49,244.2706 C670.85,252.9806 656.05,264.6706 647,280.1406 C633.76,302.7706 654.48,320.9206 680.62,333.8906 " fill="none" id="MU6-to-SEC6" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="685.21,336.0906,678.8334,328.5847,680.7042,333.9233,675.3656,335.794,685.21,336.0906" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="68" x="648" y="294.6357">«threatens»</text><!--MD5=[e09cadc9547404ffdde884e08d40727e]
+link SEC6 to MU6--><path d="M749.37,331.8006 C749.7,309.7106 750.17,277.5506 750.53,253.6806 " fill="none" id="SEC6-to-MU6" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="750.6,248.4106,746.4463,257.3407,750.5143,253.4099,754.4451,257.4779,750.6,248.4106" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="67" x="751" y="294.6357">«mitigates»</text><!--MD5=[526c6fb2daab3e495c336118aa85d9ef]
+@startuml MaliciousDriver_Misuse
+
+skinparam backgroundColor #FFFFFF
+skinparam actorStyle awesome
+
+skinparam usecase {
+  BackgroundColor #FFFFFF
+  BorderColor #333333
+  FontSize 12
+}
+
+skinparam actor {
+  BorderColor #CC0000
+  FontColor #CC0000
+}
+
+title Malicious Driver — Misuse Case Diagram
+
+actor "Malicious Driver" as MalDriver #CC0000
+
+rectangle "Traffic Safety Mobile Application" {
+
+  ' ── MISUSE CASES (red) ──
+  usecase "Submit Fake Accident Report\n(false data to waste police resources)" as MU4 #FFCCCC
+  usecase "Spoof GPS Location\n(fake coordinates in incident report)" as MU5 #FFCCCC
+  usecase "Flood False SOS Alerts\n(overwhelm emergency services)" as MU6 #FFCCCC
+
+  ' ── SECURITY USE CASES (green) ──
+  usecase "Validate Report Data\n(check completeness and consistency)" as SEC4 #CCFFEE
+  usecase "Verify GPS Coordinates\n(cross-check location validity)" as SEC5 #CCFFEE
+  usecase "Rate Limiting + Flagging\n(limit SOS frequency per user)" as SEC6 #CCFFEE
+
+}
+
+' ── ASSOCIATIONS ──
+MalDriver - - MU4
+MalDriver - - MU5
+MalDriver - - MU6
+
+' ── THREATENS ──
+MU4 ..> SEC4 : <<threatens>>
+MU5 ..> SEC5 : <<threatens>>
+MU6 ..> SEC6 : <<threatens>>
+
+' ── MITIGATES ──
+SEC4 ..> MU4 : <<mitigates>>
+SEC5 ..> MU5 : <<mitigates>>
+SEC6 ..> MU6 : <<mitigates>>
+
+@enduml
+
+@startuml MaliciousDriver_Misuse
+
+skinparam backgroundColor #FFFFFF
+skinparam actorStyle awesome
+
+skinparam usecase {
+  BackgroundColor #FFFFFF
+  BorderColor #333333
+  FontSize 12
+}
+
+skinparam actor {
+  BorderColor #CC0000
+  FontColor #CC0000
+}
+
+title Malicious Driver — Misuse Case Diagram
+
+actor "Malicious Driver" as MalDriver #CC0000
+
+rectangle "Traffic Safety Mobile Application" {
+
+  usecase "Submit Fake Accident Report\n(false data to waste police resources)" as MU4 #FFCCCC
+  usecase "Spoof GPS Location\n(fake coordinates in incident report)" as MU5 #FFCCCC
+  usecase "Flood False SOS Alerts\n(overwhelm emergency services)" as MU6 #FFCCCC
+
+  usecase "Validate Report Data\n(check completeness and consistency)" as SEC4 #CCFFEE
+  usecase "Verify GPS Coordinates\n(cross-check location validity)" as SEC5 #CCFFEE
+  usecase "Rate Limiting + Flagging\n(limit SOS frequency per user)" as SEC6 #CCFFEE
+
+}
+
+MalDriver - - MU4
+MalDriver - - MU5
+MalDriver - - MU6
+
+MU4 ..> SEC4 : <<threatens>>
+MU5 ..> SEC5 : <<threatens>>
+MU6 ..> SEC6 : <<threatens>>
+
+SEC4 ..> MU4 : <<mitigates>>
+SEC5 ..> MU5 : <<mitigates>>
+SEC6 ..> MU6 : <<mitigates>>
+
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 12:25:05 EET 2021)
+(MIT source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
