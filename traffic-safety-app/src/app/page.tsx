@@ -59,6 +59,21 @@ export default function Home() {
         </Link>
       </div>
 
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px', marginTop: '48px', textAlign: 'center' }}>
+        <div className="glass" style={{ padding: '16px' }}>
+          <div style={{ fontSize: '1.2rem', fontWeight: 700, color: 'var(--success)' }}>99.9%</div>
+          <div style={{ fontSize: '0.7rem', opacity: 0.6, textTransform: 'uppercase' }}>Uptime</div>
+        </div>
+        <div className="glass" style={{ padding: '16px' }}>
+          <div style={{ fontSize: '1.2rem', fontWeight: 700, color: 'var(--secondary)' }}>4.2m</div>
+          <div style={{ fontSize: '0.7rem', opacity: 0.6, textTransform: 'uppercase' }}>Avg Resp</div>
+        </div>
+        <div className="glass" style={{ padding: '16px' }}>
+          <div style={{ fontSize: '1.2rem', fontWeight: 700, color: 'var(--primary)' }}>2.4k</div>
+          <div style={{ fontSize: '0.7rem', opacity: 0.6, textTransform: 'uppercase' }}>Active Units</div>
+        </div>
+      </div>
+
       <footer style={{ marginTop: '60px', textAlign: 'center', opacity: 0.5, fontSize: '0.8rem' }}>
         &copy; 2026 Traffic Safety Department. Secure & Encrypted Connection.
       </footer>

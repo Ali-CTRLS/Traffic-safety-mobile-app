@@ -7,6 +7,14 @@ export default function AdminDashboard() {
   const router = useRouter();
   const [showModal, setShowModal] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
+  const [loggingOut, setLoggingOut] = useState(false);
+
+  const handleLogout = () => {
+    setLoggingOut(true);
+    setTimeout(() => {
+      router.push('/');
+    }, 800);
+  };
 
   const handleSave = () => {
     setIsSaving(true);
@@ -17,13 +25,15 @@ export default function AdminDashboard() {
   };
 
   return (
-    <main className="container animate-fade-in" style={{ maxWidth: '1200px', padding: '40px 24px' }}>
+    <main className="container animate-fade-in theme-admin" style={{ maxWidth: '1200px', padding: '40px 24px' }}>
       <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '48px' }}>
         <div>
-          <h1 style={{ fontSize: '2rem', color: 'var(--success)', letterSpacing: '-0.03em' }}>Infrastructure Control</h1>
+          <h1 style={{ fontSize: '2rem', color: 'var(--primary)', letterSpacing: '-0.03em' }}>Infrastructure Control</h1>
           <p style={{ opacity: 0.6, fontSize: '0.95rem' }}>Global Traffic Safety & Network Management</p>
         </div>
-        <button className="btn btn-ghost" onClick={() => router.push('/')}>Logout</button>
+        <button className="btn btn-ghost" onClick={handleLogout} disabled={loggingOut}>
+          {loggingOut ? 'Signing out...' : 'Logout'}
+        </button>
       </header>
 
       {/* Analytics Grid */}
@@ -148,6 +158,24 @@ export default function AdminDashboard() {
             <button className="btn btn-primary" style={{ width: '100%' }} onClick={() => setShowModal(false)}>
               Return to Terminal
             </button>
+          </div>
+        </div>
+      )}
+      {/* Loading Overlay */}
+      {loggingOut && (
+        <div style={{
+          position: 'fixed',
+          inset: 0,
+          background: 'rgba(0,0,0,0.7)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: 2000,
+          backdropFilter: 'blur(8px)'
+        }}>
+          <div className="sos-ring" style={{ width: '100px', height: '100px', opacity: 1 }}></div>
+          <div style={{ position: 'absolute', fontWeight: 600, fontSize: '0.8rem', letterSpacing: '0.1em' }}>
+            SECURELY LOGGING OUT...
           </div>
         </div>
       )}

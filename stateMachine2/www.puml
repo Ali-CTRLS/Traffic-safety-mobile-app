@@ -1,0 +1,67 @@
+@startuml IncidentReport_StateMachine
+
+skinparam backgroundColor #FFFFFF
+skinparam state {
+  BackgroundColor #FFFFFF
+  BorderColor #333333
+  FontSize 13
+  FontName Arial
+  ArrowColor #333333
+}
+
+title State Machine Diagram – Incident Report
+
+' ── START ──
+[*] --> Submitted
+
+' ── STATE 1 ──
+state Submitted {
+  Submitted : entry / capture GPS + timestamp
+  Submitted : entry / notify police officer
+}
+
+' ── TRANSITION 1 ──
+Submitted --> InReview : Police officer\nreceives and opens report
+
+' ── STATE 2 ──
+state InReview {
+  InReview : do / officer reviews\nlocation · photos · type
+}
+
+' ── TRANSITION 2 ──
+InReview --> Dispatched    : Officer classifies SEVERE\n+ dispatches emergency
+
+' ── TRANSITION 3 ──
+InReview --> FinedAndClosed : Officer classifies MINOR\n+ issues e-fine
+
+' ── STATE 3 ──
+state Dispatched {
+  Dispatched : entry / send dispatch alert\nto emergency services
+}
+
+' ── TRANSITION 4 ──
+Dispatched --> InProgress : Emergency services\nacknowledge dispatch
+
+' ── STATE 4 ──
+state InProgress {
+  InProgress : do / emergency team\nnavigating to scene
+}
+
+' ── TRANSITION 5 ──
+InProgress --> Resolved : Emergency services\nmark as resolved
+
+' ── STATE 5 ──
+state Resolved {
+  Resolved : entry / log resolution + timestamp
+}
+
+' ── STATE 6 ──
+state FinedAndClosed {
+  FinedAndClosed : entry / notify driver\n+ log fine record
+}
+
+' ── END ──
+Resolved       --> [*]
+FinedAndClosed --> [*]
+
+@enduml

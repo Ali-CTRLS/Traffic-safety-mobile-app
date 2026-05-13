@@ -23,7 +23,7 @@ export default function SafeRoutes() {
   }, []);
 
   return (
-    <main className="container animate-fade-in" style={{ maxWidth: '800px' }}>
+    <main className="container animate-fade-in theme-citizen" style={{ maxWidth: '800px' }}>
       <header style={{ marginBottom: '24px', display: 'flex', alignItems: 'center', gap: '16px' }}>
         <button className="btn btn-ghost" style={{ padding: '8px 12px' }} onClick={() => router.back()}>← Back</button>
         <h1 style={{ fontSize: '1.5rem' }}>Safe Route Planner</h1>
@@ -117,13 +117,6 @@ export default function SafeRoutes() {
       <style jsx>{`
         @keyframes dash {
           to { stroke-dashoffset: 0; }
-        }
-        .animate-spin {
-          animation: spin 1s linear infinite;
-        }
-        @keyframes spin {
-          from { transform: rotate(0deg); }
-          to { transform: rotate(360deg); }
         }
       `}</style>
     </main>

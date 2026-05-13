@@ -31,6 +31,22 @@
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Role-Specific Branding Overrides */
+.theme-citizen {
+  --primary: #007AFF;
+  --primary-glow: rgba(0, 122, 255, 0.4);
+}
+
+.theme-police {
+  --primary: #FF3B30;
+  --primary-glow: rgba(255, 59, 48, 0.4);
+}
+
+.theme-admin {
+  --primary: #FF9500;
+  --primary-glow: rgba(255, 149, 0, 0.4);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -255,6 +271,28 @@ p {
 @keyframes pulse {
   0% { transform: scale(1); opacity: 0.5; }
   100% { transform: scale(1.4); opacity: 0; }
+}
+
+@keyframes radar-spin {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes dash {
+  to { stroke-dashoffset: 0; }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+.animate-radar {
+  animation: radar-spin 4s linear infinite;
 }
 
 .animate-fade-in {

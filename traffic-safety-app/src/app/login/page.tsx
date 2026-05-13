@@ -12,8 +12,12 @@ function LoginForm() {
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    
+    // Ensure we have a valid role, fallback to citizen if not
+    const targetRole = role && ['citizen', 'police', 'admin'].includes(role) ? role : 'citizen';
+    
     setTimeout(() => {
-      router.push(`/dashboard/${role}`);
+      router.push(`/dashboard/${targetRole}`);
     }, 1200);
   };
 

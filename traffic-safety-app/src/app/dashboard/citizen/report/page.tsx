@@ -24,7 +24,7 @@ export default function ReportIncident() {
   };
 
   return (
-    <main className="container animate-fade-in">
+    <main className="container animate-fade-in theme-citizen">
       <header style={{ marginBottom: '32px' }}>
         <button className="btn btn-ghost" style={{ padding: '8px 12px', fontSize: '0.8rem' }} onClick={() => router.back()}>← Back</button>
         <h1 style={{ fontSize: '1.8rem', marginTop: '16px' }}>Report Incident</h1>
